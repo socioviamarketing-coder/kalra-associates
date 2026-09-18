@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalra Associates | Luxury Real Estate & Property Advisory</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fbf8f2',
+                            100: '#f5eee0',
+                            200: '#e9dabf',
+                            500: '#d4af37', // Gold accent
+                            600: '#b89025',
+                            700: '#946f1a',
+                            900: '#0f172a', // Deep slate navy
+                            950: '#080d1a'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #b89025 100%);
+        }
+        .gold-text {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #b89025 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased flex flex-col min-h-screen selection:bg-brand-500 selection:text-white">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-brand-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-phone text-brand-500 mr-2"></i>+1 (800) 555-KALRA</span>
+                <span><i class="fa-solid fa-envelope text-brand-500 mr-2"></i>contact@kalraassociates.com</span>
+                <span><i class="fa-solid fa-location-dot text-brand-500 mr-2"></i>Fifth Avenue, Suite 400, NY</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-slate-400">Follow Us:</span>
+                <a href="#" class="hover:text-brand-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-brand-500 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-brand-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-slate-200/80 shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-11 h-11 bg-brand-900 rounded-xl flex items-center justify-center text-brand-500 font-serif text-2xl font-bold shadow-md border border-brand-500/30 group-hover:bg-brand-950 transition-colors">
+                        K
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-xl font-bold tracking-tight text-slate-900 leading-none">KALRA</span>
+                        <span class="text-[10px] font-semibold tracking-widest text-brand-600 uppercase">Associates Real Estate</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-700">
+                    <a href="#hero" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Home</a>
+                    <a href="#properties" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Properties</a>
+                    <a href="#services" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Services</a>
+                    <a href="#calculator" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Mortgage Calculator</a>
+                    <a href="#about" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">About Us</a>
+                    <a href="#contact" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Contact</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="flex items-center space-x-3">
+                    <!-- Favorites Drawer Button -->
+                    <button onclick="toggleFavoritesDrawer()" class="relative p-2.5 rounded-xl text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all" title="Saved Properties">
+                        <i class="fa-regular fa-heart text-xl"></i>
+                        <span id="favCount" class="absolute -top-1 -right-1 bg-brand-500 text-slate-900 text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+                    </button>
+
+                    <!-- Compare Drawer Button -->
+                    <button onclick="openCompareModal()" class="relative p-2.5 rounded-xl text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all" title="Compare Properties">
+                        <i class="fa-solid fa-[#fa-sliders] fa-code-compare text-xl"></i>
+                        <span id="compareCount" class="absolute -top-1 -right-1 bg-slate-900 text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
+                    </button>
+
+                    <!-- Call CTA Button -->
+                    <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-900 text-white font-semibold text-sm shadow-md hover:bg-brand-950 transition-all hover:shadow-lg border border-brand-500/20 active:scale-95">
+                        <i class="fa-regular fa-calendar-check mr-2 text-brand-500"></i> Book Consultation
+                    </a>
+
+                    <!-- Mobile Menu Button -->
+                    <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 text-slate-700 hover:bg-slate-100 rounded-xl">
+                        <i class="fa-solid fa-bars text-xl" id="menuIcon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Home</a>
+            <a href="#properties" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Properties</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Services</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Mortgage Calculator</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">About Us</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Contact</a>
+            <a href="#contact" onclick="toggleMobileMenu()" class="block w-full text-center py-3 bg-brand-900 text-white rounded-xl font-semibold shadow-md">
+                Schedule Advisory Call
+            </a>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <!-- Hero Section -->
+        <section id="hero" class="relative min-h-[85vh] flex items-center justify-center bg-brand-950 text-white overflow-hidden py-20 px-4">
+            <!-- Background Image Overlay with Dark Gradient -->
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80" 
+                     onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80'" 
+                     alt="Luxury Architecture" 
+                     class="w-full h-full object-cover object-center opacity-35 scale-105 animate-pulse" style="animation-duration: 10s;">
+                <div class="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-950/70 to-transparent"></div>
+            </div>
+
+            <div class="relative z-10 max-w-5xl mx-auto text-center space-y-8">
+                <!-- Tagline Badge -->
+                <div class="inline-flex items-center space-x-2 bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-brand-500/40 text-xs font-semibold tracking-wider uppercase text-brand-500 shadow-xl">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
+                    <span>Exclusive Property Portfolio 2026</span>
+                </div>
+
+                <!-- Headline -->
+                <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight text-white">
+                    Discover Architectural <br class="hidden sm:inline"/>
+                    <span class="gold-text italic">Masterpieces & Luxury Living</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-slate-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
+                    Kalra Associates provides bespoke real estate solutions, premium residential estates, and strategic commercial properties tailored to your lifestyle.
+                </p>
+
+                <!-- Property Search Widget Container -->
+                <div class="pt-4 max-w-4xl mx-auto">
+                    <div class="glass-panel p-4 sm:p-6 rounded-2xl shadow-2xl text-left border border-white/20">
+                        <!-- Search Tabs -->
+                        <div class="flex space-x-2 mb-4 border-b border-white/10 pb-3">
+                            <button onclick="setSearchIntent('buy')" id="btnIntentBuy" class="px-5 py-2 rounded-lg text-sm font-bold bg-brand-500 text-slate-900 transition-all">Buy</button>
+                            <button onclick="setSearchIntent('rent')" id="btnIntentRent" class="px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all">Rent</button>
+                            <button onclick="setSearchIntent('commercial')" id="btnIntentCommercial" class="px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all">Commercial</button>
+                        </div>
+
+                        <!-- Filter Fields -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                            <!-- Location Dropdown -->
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Location</label>
+                                <div class="relative">
+                                    <i class="fa-solid fa-location-dot absolute left-3 top-3.5 text-brand-500 text-sm"></i>
+                                    <select id="searchLocation" class="w-full bg-slate-900/90 text-white text-sm rounded-xl pl-9 pr-3 py-3 border border-slate-700 focus:outline-none focus:border-brand-500">
+                                        <option value="">All Locations</option>
+                                        <option value="Manhattan">Manhattan, NY</option>
+                                        <option value="Beverly Hills">Beverly Hills, CA</option>
+                                        <option value="Miami Beach">Miami Beach, FL</option>
+                                        <option value="Aspen">Aspen, CO</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Property Type Dropdown -->
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Property Type</label>
+                                <div class="relative">
+                                    <i class="fa-solid fa-building absolute left-3 top-3.5 text-brand-500 text-sm"></i>
+                                    <select id="searchType" class="w-full bg-slate-900/90 text-white text-sm rounded-xl pl-9 pr-3 py-3 border border-slate-700 focus:outline-none focus:border-brand-500">
+                                        <option value="">All Types</option>
+                                        <option value="Villa">Luxury Villa</option>
+                                        <option value="Penthouse">Penthouse</option>
+                                        <option value="Apartment">Modern Apartment</option>
+                                        <option value="Estate">Private Estate</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Price Range -->
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Max Price</label>
+                                <div class="relative">
+                                    <i class="fa-solid fa-dollar-sign absolute left-3 top-3.5 text-brand-500 text-sm"></i>
+                                    <select id="searchMaxPrice" class="w-full bg-slate-900/90 text-white text-sm rounded-xl pl-9 pr-3 py-3 border border-slate-700 focus:outline-none focus:border-brand-500">
+                                        <option value="">Any Budget</option>
+                                        <option value="2000000">Up to $2,000,000</option>
+                                        <option value="5000000">Up to $5,000,000</option>
+                                        <option value="10000000">Up to $10,000,000</option>
+                                        <option value="25000000">Up to $25,000,000</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <!-- Submit Search -->
+                            <div class="flex items-end">
+                                <button onclick="executeHeroSearch()" class="w-full gold-gradient hover:opacity-95 text-slate-950 font-bold py-3 px-6 rounded-xl flex items-center justify-center shadow-lg transition-all active:scale-95">
+                                    <i class="fa-solid fa-magnifying-glass mr-2"></i> Search
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats & Achievements Strip -->
+        <section class="bg-brand-900 border-y border-brand-500/20 py-10 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                    <div class="space-y-1">
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">$2.4B+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Gross Property Sales</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">1,850+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Luxury Homes Handled</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">25+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Excellence</div>
+                    </div>
+                    <div class="space-y-1">
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">99.4%</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Properties Section -->
+        <section id="properties" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-brand-600 font-bold uppercase tracking-wider text-xs">Exclusive Showcase</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Featured Real Estate Portfolio</h2>
+                </div>
+                <!-- Interactive Filter Pills -->
+                <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="filterPills">
+                    <button onclick="filterProperties('all')" class="filter-btn active-pill px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-brand-900 text-white">All Properties</button>
+                    <button onclick="filterProperties('Villa')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Villas</button>
+                    <button onclick="filterProperties('Penthouse')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Penthouses</button>
+                    <button onclick="filterProperties('Apartment')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Apartments</button>
+                    <button onclick="filterProperties('Estate')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Estates</button>
+                </div>
+            </div>
+
+            <!-- Property Search Input inside section for fine tuning -->
+            <div class="mb-8 flex flex-col sm:flex-row gap-4 justify-between items-center bg-slate-100 p-4 rounded-2xl">
+                <div class="relative w-full sm:w-80">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-400"></i>
+                    <input type="text" id="keywordSearch" onkeyup="searchByKeyword()" placeholder="Search by name or city..." class="w-full pl-9 pr-4 py-2.5 bg-white rounded-xl text-sm border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                </div>
+                <div class="text-sm text-slate-500 font-medium flex items-center gap-2">
+                    <span>Showing <strong id="visibleCount" class="text-slate-900">0</strong> properties</span>
+                </div>
+            </div>
+
+            <!-- Property Grid -->
+            <div id="propertyGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Dynamic cards populated via JavaScript -->
+            </div>
+        </section>
+
+        <!-- Interactive Mortgage Calculator -->
+        <section id="calculator" class="py-20 bg-slate-900 text-white relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                    <span class="text-brand-500 font-bold text-xs tracking-widest uppercase">Financial Advisory</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold">Mortgage & Financing Calculator</h2>
+                    <p class="text-slate-400 text-sm">Estimate your monthly mortgage payments based on purchase price, interest rates, and loan terms.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                    <!-- Controls -->
+                    <div class="lg:col-span-7 space-y-6 bg-slate-800/60 p-6 sm:p-8 rounded-2xl border border-slate-700/60">
+                        <!-- Home Price Slider -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-sm font-semibold text-slate-300">Property Purchase Price</label>
+                                <span id="calcPriceVal" class="text-lg font-bold text-brand-500">$3,500,000</span>
+                            </div>
+                            <input type="range" id="calcPrice" min="500000" max="20000000" step="100000" value="3500000" oninput="updateCalculator()" class="w-full accent-brand-500 cursor-pointer">
+                            <div class="flex justify-between text-xs text-slate-500 mt-1">
+                                <span>$500K</span>
+                                <span>$20M</span>
+                            </div>
+                        </div>
+
+                        <!-- Down Payment Slider -->
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label class="text-sm font-semibold text-slate-300">Down Payment (%)</label>
+                                <span id="calcDownVal" class="text-lg font-bold text-brand-500">20% ($700,000)</span>
+                            </div>
+                            <input type="range" id="calcDown" min="5" max="50" step="1" value="20" oninput="updateCalculator()" class="w-full accent-brand-500 cursor-pointer">
+                            <div class="flex justify-between text-xs text-slate-500 mt-1">
+                                <span>5%</span>
+                                <span>50%</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <!-- Interest Rate -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">Interest Rate (%)</label>
+                                <input type="number" id="calcInterest" value="6.5" step="0.1" min="1" max="15" oninput="updateCalculator()" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-3 px-4 text-white font-semibold focus:outline-none focus:border-brand-500">
+                            </div>
+
+                            <!-- Loan Term -->
+                            <div>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">Loan Term (Years)</label>
+                                <select id="calcTerm" onchange="updateCalculator()" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-3 px-4 text-white font-semibold focus:outline-none focus:border-brand-500">
+                                    <option value="15">15 Years</option>
+                                    <option value="20">20 Years</option>
+                                    <option value="30" selected>30 Years</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Output Card -->
+                    <div class="lg:col-span-5">
+                        <div class="glass-panel p-8 rounded-2xl border border-brand-500/30 text-center space-y-6 relative overflow-hidden">
+                            <div class="absolute -right-10 -top-10 w-40 h-40 bg-brand-500/10 rounded-full blur-2xl pointer-events-none"></div>
+                            
+                            <span class="text-slate-400 text-xs uppercase tracking-widest font-semibold">Estimated Monthly Payment</span>
+                            <div id="calcMonthlyResult" class="font-serif text-5xl font-bold gold-text">$17,698</div>
+                            <span class="text-xs text-slate-400 block">/ per month (Principal & Interest)</span>
+
+                            <div class="border-t border-slate-700 pt-6 space-y-3 text-left text-sm">
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Total Loan Amount:</span>
+                                    <span id="calcTotalLoan" class="font-bold text-slate-200">$2,800,000</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Total Interest Payable:</span>
+                                    <span id="calcTotalInterest" class="font-bold text-slate-200">$3,571,418</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-slate-400">Est. Taxes & Insurance:</span>
+                                    <span id="calcTaxes" class="font-bold text-slate-200">$1,850/mo</span>
+                                </div>
+                            </div>
+
+                            <a href="#contact" class="block w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold rounded-xl transition-all shadow-lg text-center">
+                                Get Pre-Approved Today
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section -->
+        <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Bespoke Solutions</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Comprehensive Advisory Services</h2>
+                <p class="text-slate-600 text-sm">Providing high-net-worth individuals and investors with unparalleled market expertise and confidential real estate guidance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Residential Buying & Selling</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">End-to-end representation for acquiring or marketing luxury luxury villas, estates, and urban penthouses.</p>
+                </div>
+
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Property Investment Advisory</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Data-driven market intelligence to optimize portfolio yield, property acquisition, and capital growth.</p>
+                </div>
+
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
+                        <i class="fa-solid fa-[#fa-shield-halved] fa-scale-balanced"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Legal & Documentation</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Full legal compliance, title verification, escrow management, and seamless documentation support.</p>
+                </div>
+
+                <!-- Service Card 4 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-1 group">
+                    <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Property Management</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Premium asset upkeep, high-end tenant curation, lease management, and routine maintenance.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us / Founder Section -->
+        <section id="about" class="py-20 bg-slate-100 px-4 sm:px-6 lg:px-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Image Showcase -->
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden shadow-2xl relative z-10 border-4 border-white">
+                            <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1000&q=80" 
+                                 onerror="this.src='https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1000&q=80'" 
+                                 alt="Kalra Associates Office" class="w-full h-[480px] object-cover">
+                        </div>
+                        <div class="absolute -bottom-6 -right-6 w-64 bg-brand-900 text-white p-6 rounded-2xl shadow-xl z-20 hidden sm:block border border-brand-500/30">
+                            <p class="font-serif italic text-sm text-slate-300">"Trust and excellence are the bedrock of every relationship we build."</p>
+                            <span class="block mt-2 font-bold text-brand-500 text-sm">— Vikram Kalra, Founder</span>
+                        </div>
+                    </div>
+
+                    <!-- Narrative -->
+                    <div class="space-y-6">
+                        <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Legacy & Excellence</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">Setting the Gold Standard in Luxury Real Estate</h2>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Established over two decades ago, Kalra Associates has evolved into one of the most recognized leadership names in high-end real estate brokerage and advisory.
+                        </p>
+                        <p class="text-slate-600 text-sm leading-relaxed">
+                            Our team combines deep localized insights with global reach, curating architectural gems and high-value investment assets. Whether purchasing a primary residence, acquiring commercial footprints, or seeking discrete off-market opportunities, we provide unmatched discretion and performance.
+                        </p>
+
+                        <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <span class="font-semibold text-sm text-slate-800">Discrete Off-Market Deals</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </div>
+                                <span class="font-semibold text-sm text-slate-800">Global Buyer Network</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+                <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Client Endorsements</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">What Our Distinction Clients Say</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-400 text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Kalra Associates delivered an off-market penthouse in Manhattan that exceeded all our expectations. Their negotiation skills and discretion were phenomenal."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-100">
+                        <div class="w-11 h-11 rounded-full bg-slate-200 font-bold flex items-center justify-center text-slate-700 font-serif">
+                            RH
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Richard Harrison</h4>
+                            <span class="text-xs text-slate-400">Hedge Fund Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-400 text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "Selling our Beverly Hills estate through Kalra Associates was remarkably smooth. Their high-end staging and digital video tour produced three full-price offers in a week."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-100">
+                        <div class="w-11 h-11 rounded-full bg-slate-200 font-bold flex items-center justify-center text-slate-700 font-serif">
+                            SK
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Sophia Kapoor</h4>
+                            <span class="text-xs text-slate-400">Architectural Designer</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-4 flex flex-col justify-between">
+                    <div class="space-y-3">
+                        <div class="flex text-amber-400 text-sm space-x-1">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-600 text-sm italic leading-relaxed">
+                            "The mortgage advisory and legal clarity provided by Mr. Kalra's senior team gave us total peace of mind for our multi-million dollar property acquisition."
+                        </p>
+                    </div>
+                    <div class="flex items-center space-x-4 pt-4 border-t border-slate-100">
+                        <div class="w-11 h-11 rounded-full bg-slate-200 font-bold flex items-center justify-center text-slate-700 font-serif">
+                            MV
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-sm">Marcus Vance</h4>
+                            <span class="text-xs text-slate-400">Tech Entrepreneur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Booking Section -->
+        <section id="contact" class="py-20 bg-brand-950 text-white px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                    
+                    <!-- Contact Details -->
+                    <div class="lg:col-span-5 space-y-8">
+                        <div>
+                            <span class="text-brand-500 font-bold text-xs tracking-widest uppercase">Get In Touch</span>
+                            <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Let's Discuss Your Real Estate Goals</h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">Schedule a private consultation with our principal advisors to explore exclusive listings or list your property.</p>
+                        </div>
+
+                        <div class="space-y-6 text-sm">
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Headquarters</h4>
+                                    <p class="text-slate-400 mt-0.5">745 Fifth Avenue, 28th Floor, New York, NY 10151</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Direct Advisory Phone</h4>
+                                    <p class="text-slate-400 mt-0.5">+1 (800) 555-KALRA / +1 (212) 890-4421</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Private Email Desk</h4>
+                                    <p class="text-slate-400 mt-0.5">advisory@kalraassociates.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Container -->
+                    <div class="lg:col-span-7">
+                        <form id="contactForm" onsubmit="handleContactSubmit(event)" class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 space-y-6">
+                            <h3 class="font-serif text-2xl font-bold text-white mb-2">Request Private Call Back</h3>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
+                                    <input type="text" required placeholder="e.g. Eleanor Vance" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
+                                    <input type="email" required placeholder="eleanor@example.com" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="+1 (555) 000-0000" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Interest Requirement</label>
+                                    <select class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                        <option value="buy">Buying Luxury Property</option>
+                                        <option value="sell">Selling My Property</option>
+                                        <option value="invest">Commercial Investment</option>
+                                        <option value="advisory">General Consultation</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Specific Property Preferences</label>
+                                <textarea rows="4" placeholder="Tell us about your target location, budget, or preferred amenities..." class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full gold-gradient hover:opacity-95 text-slate-950 font-bold py-4 rounded-xl shadow-lg transition-all text-sm tracking-wider uppercase active:scale-95">
+                                Send Inquiry Request
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+                <!-- Col 1 -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-brand-900 rounded-xl flex items-center justify-center text-brand-500 font-serif text-2xl font-bold border border-brand-500/30">
+                            K
+                        </div>
+                        <span class="font-serif text-xl font-bold text-white tracking-tight">KALRA ASSOCIATES</span>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Kalra Associates is a boutique real estate brokerage and advisory firm specializing in ultra-luxury residential properties and commercial portfolios globally.
+                    </p>
+                    <div class="flex space-x-3 pt-2">
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Quick Links</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#hero" class="hover:text-brand-500 transition-colors">Home</a></li>
+                        <li><a href="#properties" class="hover:text-brand-500 transition-colors">Featured Listings</a></li>
+                        <li><a href="#calculator" class="hover:text-brand-500 transition-colors">Mortgage Calculator</a></li>
+                        <li><a href="#about" class="hover:text-brand-500 transition-colors">About Kalra Associates</a></li>
+                        <li><a href="#contact" class="hover:text-brand-500 transition-colors">Book Private Visit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Property Types</h4>
+                    <ul class="space-y-2.5 text-xs">
+                        <li><a href="#properties" onclick="filterProperties('Villa')" class="hover:text-brand-500 transition-colors">Luxury Villas</a></li>
+                        <li><a href="#properties" onclick="filterProperties('Penthouse')" class="hover:text-brand-500 transition-colors">Modern Penthouses</a></li>
+                        <li><a href="#properties" onclick="filterProperties('Apartment')" class="hover:text-brand-500 transition-colors">Urban Condos</a></li>
+                        <li><a href="#properties" onclick="filterProperties('Estate')" class="hover:text-brand-500 transition-colors">Waterfront Estates</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4 -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Newsletter</h4>
+                    <p class="text-xs text-slate-400 mb-3">Subscribe for exclusive off-market listing previews.</p>
+                    <form onsubmit="event.preventDefault(); showToast('Subscribed to Kalra Associates newsletter!');" class="space-y-2">
+                        <input type="email" required placeholder="Enter email address" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-500">
+                        <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-2 rounded-lg text-xs transition-colors">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-slate-900 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 Kalra Associates Real Estate. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 sm:mt-0">
+                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
+                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
+                    <a href="#" class="hover:text-slate-400">Equal Housing Opportunity</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- PROPERTY DETAILS MODAL -->
+    <div id="detailsModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-4xl w-full max-h-[90vh] overflow-y-auto custom-scrollbar shadow-2xl border border-slate-200 relative animate-in fade-in zoom-in duration-200">
+            <!-- Close Button -->
+            <button onclick="closeDetailsModal()" class="absolute top-4 right-4 z-10 w-10 h-10 rounded-full bg-slate-900/70 text-white flex items-center justify-center hover:bg-slate-900 transition-colors">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+
+            <!-- Content dynamic container -->
+            <div id="modalContent" class="p-6 sm:p-8 space-y-6">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SAVED PROPERTIES DRAWER -->
+    <div id="favoritesDrawer" class="fixed inset-0 z-50 hidden">
+        <div class="absolute inset-0 bg-slate-950/60 backdrop-blur-sm" onclick="toggleFavoritesDrawer()"></div>
+        <div class="absolute right-0 top-0 bottom-0 w-full max-w-md bg-white shadow-2xl flex flex-col justify-between p-6 z-10">
+            <div>
+                <div class="flex justify-between items-center pb-4 border-b border-slate-200">
+                    <h3 class="font-serif text-xl font-bold text-slate-900"><i class="fa-solid fa-heart text-rose-500 mr-2"></i> Saved Properties</h3>
+                    <button onclick="toggleFavoritesDrawer()" class="text-slate-400 hover:text-slate-700 text-lg">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div id="favoritesList" class="mt-6 space-y-4 max-h-[70vh] overflow-y-auto custom-scrollbar">
+                    <!-- Dynamic favorites list -->
+                </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200">
+                <a href="#contact" onclick="toggleFavoritesDrawer()" class="block w-full py-3 bg-brand-900 text-white text-center font-bold rounded-xl hover:bg-brand-950 transition-colors">
+                    Inquire About Saved Properties
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- COMPARE PROPERTIES MODAL -->
+    <div id="compareModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md">
+        <div class="bg-white rounded-3xl max-w-5xl w-full max-h-[90vh] overflow-y-auto p-6 sm:p-8 relative shadow-2xl">
+            <button onclick="closeCompareModal()" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-slate-200">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <h3 class="font-serif text-2xl font-bold text-slate-900 mb-2">Property Comparison</h3>
+            <p class="text-sm text-slate-500 mb-6">Compare key specifications of up to 3 selected properties side-by-side.</p>
+            
+            <div id="compareTableContainer" class="overflow-x-auto">
+                <!-- Comparison table injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 text-white px-5 py-3.5 rounded-xl shadow-2xl flex items-center space-x-3 border border-brand-500/40">
+        <i class="fa-solid fa-circle-check text-brand-500 text-lg" id="toastIcon"></i>
+        <span id="toastMsg" class="text-sm font-medium">Notification Message</span>
+    </div>
+
+    <script>
+        // Data Store for Kalra Associates Properties
+        const propertiesData = [
+            {
+                id: 1,
+                title: "The Glass House Sky Villa",
+                type: "Penthouse",
+                status: "Buy",
+                price: 8500000,
+                location: "Manhattan, NY",
+                address: "432 Park Avenue, Penthouse 72, New York",
+                beds: 4,
+                baths: 5,
+                sqft: 4800,
+                garage: 2,
+                year: 2023,
+                image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
+                gallery: [
+                    "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80"
+                ],
+                amenities: ["Private Elevator", "360 Skyline View", "Heated Infinity Pool", "24/7 Doorman", "Wine Cellar"],
+                description: "An architectural marvel towering high above Central Park. Features floor-to-ceiling ultra-clear glass walls, custom Italian marble kitchen, private spa room, and smart home automation."
+            },
+            {
+                id: 2,
+                title: "Beverly Crest Architectural Estate",
+                type: "Villa",
+                status: "Buy",
+                price: 14200000,
+                location: "Beverly Hills, CA",
+                address: "1040 Summit Drive, Beverly Hills",
+                beds: 6,
+                baths: 8,
+                sqft: 8500,
+                garage: 4,
+                year: 2024,
+                image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+                gallery: [
+                    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80"
+                ],
+                amenities: ["Private Tennis Court", "Zero-Edge Pool", "Home Cinema", "Security Guardhouse", "Solar Powered"],
+                description: "Nestled in prestigious Beverly Hills, this newly constructed compound offers complete privacy, cascading water features, expansive manicured grounds, and seamless indoor-outdoor luxury integration."
+            },
+            {
+                id: 3,
+                title: "Biscayne Bay Oceanfront Sanctuary",
+                type: "Estate",
+                status: "Buy",
+                price: 11800000,
+                location: "Miami Beach, FL",
+                address: "220 Star Island Drive, Miami Beach",
+                beds: 5,
+                baths: 6,
+                sqft: 7200,
+                garage: 3,
+                year: 2022,
+                image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80",
+                gallery: [
+                    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1000&q=80"
+                ],
+                amenities: ["Private Yacht Dock", "Outdoor Kitchen", "Sauna & Steam Room", "Gated Security", "Roof Terrace"],
+                description: "Direct deep-water oceanfront estate capable of docking up to a 100ft yacht. Includes lush tropical landscaping, summer kitchen, and panoramic sunset views across Biscayne Bay."
+            },
+            {
+                id: 4,
+                title: "Aspen Mountain Modern Chalet",
+                type: "Villa",
+                status: "Buy",
+                price: 9800000,
+                location: "Aspen, CO",
+                address: "710 Red Mountain Road, Aspen",
+                beds: 5,
+                baths: 5,
+                sqft: 6100,
+                garage: 2,
+                year: 2021,
+                image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80",
+                gallery: [
+                    "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80"
+                ],
+                amenities: ["Ski-in / Ski-out", "Radiant Heated Driveway", "Outdoor Fire Pits", "Custom Timberwork"],
+                description: "Ski-in/ski-out luxury living on Red Mountain. Features soaring cathedral ceilings, floor-to-ceiling stone fireplaces, and stunning alpine vistas."
+            },
+            {
+                id: 5,
+                title: "Tribeca Brick Loft Residence",
+                type: "Apartment",
+                status: "Rent",
+                price: 18500, // per month
+                location: "Manhattan, NY",
+                address: "180 Franklin Street, Tribeca, NY",
+                beds: 3,
+                baths: 3,
+                sqft: 3100,
+                garage: 1,
+                year: 2020,
+                image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80",
+                gallery: [
+                    "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80",
+                    "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=80"
+                ],
+                amenities: ["Exposed Brickwork", "Private Keyed Elevator", "Chef Grade Appliances", "Concierge"],
+                description: "Authentic Tribeca industrial loft featuring original exposed brick columns, wide-plank oak flooring, professional Sub-Zero/Gaggenau kitchen appliances."
+            },
+            {
+                id: 6,
+                title: "Malibu Ocean Terrace Residence",
+                type: "Penthouse",
+                status: "Rent",
+                price: 32000, // per month
+                location: "Beverly Hills, CA",
+                address: "23800 Pacific Coast Hwy, Malibu",
+                beds: 4,
+                baths: 4,
+                sqft: 4200,
+                garage: 2,
+                year: 2022,
+                image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80",
+                gallery: [
+                    "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
+                ],
+                amenities: ["Private Beach Access", "Cantilevered Deck", "Floor-to-Ceiling Glass", "Tesla Charger"],
+                description: "Overlooking the pristine sands of Malibu beach with breathtaking ocean waves right below your cantilevered balcony."
+            }
+        ];
+
+        // App State
+        let favorites = JSON.parse(localStorage.getItem('kalra_favs') || '[]');
+        let compareList = [];
+        let currentFilterCategory = 'all';
+        let currentIntent = 'buy';
+
+        // Render Properties Grid
+        function renderProperties() {
+            const grid = document.getElementById('propertyGrid');
+            const keyword = document.getElementById('keywordSearch').value.toLowerCase();
+
+            const filtered = propertiesData.filter(item => {
+                const matchesCategory = currentFilterCategory === 'all' || item.type === currentFilterCategory;
+                const matchesKeyword = item.title.toLowerCase().includes(keyword) || 
+                                       item.location.toLowerCase().includes(keyword) ||
+                                       item.address.toLowerCase().includes(keyword);
+                return matchesCategory && matchesKeyword;
+            });
+
+            document.getElementById('visibleCount').innerText = filtered.length;
+
+            if (filtered.length === 0) {
+                grid.innerHTML = `
+                    <div class="col-span-full text-center py-12 bg-white rounded-2xl border border-dashed border-slate-300">
+                        <i class="fa-solid fa-house-chimney text-4xl text-slate-300 mb-3 block"></i>
+                        <h3 class="text-lg font-bold text-slate-800">No matching properties found</h3>
+                        <p class="text-xs text-slate-500 mt-1">Try resetting your search parameters or location query.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            grid.innerHTML = filtered.map(prop => {
+                const isFav = favorites.includes(prop.id);
+                const isComp = compareList.includes(prop.id);
+                const priceFormatted = prop.status === 'Rent' 
+                    ? `$${prop.price.toLocaleString()}/mo` 
+                    : `$${prop.price.toLocaleString()}`;
+
+                return `
+                    <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
+                        <!-- Card Header & Image -->
+                        <div class="relative overflow-hidden h-64">
+                            <img src="${prop.image}" 
+                                 onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80'" 
+                                 alt="${prop.title}" 
+                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            
+                            <!-- Status Badges -->
+                            <div class="absolute top-4 left-4 flex space-x-2">
+                                <span class="bg-slate-900/80 backdrop-blur-md text-white text-[11px] font-bold px-3 py-1 rounded-lg uppercase tracking-wider">
+                                    ${prop.type}
+                                </span>
+                                <span class="bg-brand-500 text-slate-950 text-[11px] font-bold px-3 py-1 rounded-lg uppercase tracking-wider">
+                                    For ${prop.status}
+                                </span>
+                            </div>
+
+                            <!-- Favorite Button -->
+                            <button onclick="toggleFavorite(${prop.id})" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-white/90 backdrop-blur-md text-slate-700 hover:text-rose-500 flex items-center justify-center shadow-md transition-colors">
+                                <i class="${isFav ? 'fa-solid text-rose-500' : 'fa-regular'} fa-heart"></i>
+                            </button>
+                        </div>
+
+                        <!-- Card Body -->
+                        <div class="p-6 flex-grow space-y-4">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <span class="text-xs text-brand-600 font-semibold uppercase tracking-wider"><i class="fa-solid fa-location-dot mr-1"></i>${prop.location}</span>
+                                    <h3 class="font-serif text-xl font-bold text-slate-900 mt-1 line-clamp-1">${prop.title}</h3>
+                                </div>
+                            </div>
+
+                            <p class="text-xs text-slate-500 line-clamp-1"><i class="fa-solid fa-map-pin mr-1"></i>${prop.address}</p>
+
+                            <!-- Features Pill Grid -->
+                            <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-slate-600 text-xs">
+                                <div class="flex items-center space-x-1.5">
+                                    <i class="fa-solid fa-bed text-brand-500"></i>
+                                    <span><strong>${prop.beds}</strong> Beds</span>
+                                </div>
+                                <div class="flex items-center space-x-1.5">
+                                    <i class="fa-solid fa-bath text-brand-500"></i>
+                                    <span><strong>${prop.baths}</strong> Baths</span>
+                                </div>
+                                <div class="flex items-center space-x-1.5">
+                                    <i class="fa-solid fa-ruler-combined text-brand-500"></i>
+                                    <span><strong>${prop.sqft.toLocaleString()}</strong> sqft</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card Footer -->
+                        <div class="px-6 pb-6 pt-2 flex items-center justify-between border-t border-slate-50">
+                            <div>
+                                <span class="text-[10px] uppercase text-slate-400 font-bold block">Guide Price</span>
+                                <span class="font-serif text-xl font-bold text-slate-900">${priceFormatted}</span>
+                            </div>
+                            
+                            <div class="flex space-x-2">
+                                <button onclick="toggleCompare(${prop.id})" class="px-3 py-2 rounded-xl text-xs font-semibold ${isComp ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'} transition-all" title="Compare">
+                                    <i class="fa-solid fa-code-compare"></i>
+                                </button>
+                                <button onclick="openDetailsModal(${prop.id})" class="px-4 py-2 bg-brand-900 hover:bg-brand-950 text-white text-xs font-bold rounded-xl transition-all shadow-sm">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        // Details Modal Renderer
+        function openDetailsModal(id) {
+            const prop = propertiesData.find(p => p.id === id);
+            if (!prop) return;
+
+            const modalContent = document.getElementById('modalContent');
+            const priceFormatted = prop.status === 'Rent' ? `$${prop.price.toLocaleString()}/mo` : `$${prop.price.toLocaleString()}`;
+
+            modalContent.innerHTML = `
+                <!-- Gallery Section -->
+                <div class="space-y-3">
+                    <div class="rounded-2xl overflow-hidden h-80 sm:h-96 w-full">
+                        <img id="mainGalleryImg" src="${prop.image}" alt="${prop.title}" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex space-x-3 overflow-x-auto pb-2 custom-scrollbar">
+                        ${prop.gallery.map(img => `
+                            <img src="${img}" onclick="document.getElementById('mainGalleryImg').src='${img}'" class="w-20 h-20 rounded-xl object-cover cursor-pointer hover:opacity-80 transition-opacity border-2 border-transparent hover:border-brand-500 shrink-0">
+                        `).join('')}
+                    </div>
+                </div>
+
+                <!-- Info Header -->
+                <div class="flex flex-col sm:flex-row justify-between items-start gap-4 pb-4 border-b border-slate-200">
+                    <div>
+                        <span class="text-xs font-bold uppercase tracking-wider text-brand-600">${prop.type} • For ${prop.status}</span>
+                        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">${prop.title}</h2>
+                        <p class="text-xs text-slate-500 mt-1"><i class="fa-solid fa-location-dot mr-1"></i>${prop.address}</p>
+                    </div>
+                    <div class="text-left sm:text-right">
+                        <span class="text-xs text-slate-400 block font-bold uppercase">Price</span>
+                        <span class="font-serif text-3xl font-bold text-slate-900">${priceFormatted}</span>
+                    </div>
+                </div>
+
+                <!-- Specs Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <div>
+                        <span class="text-xs text-slate-400 block">Bedrooms</span>
+                        <strong class="text-slate-800 text-base">${prop.beds} Beds</strong>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block">Bathrooms</span>
+                        <strong class="text-slate-800 text-base">${prop.baths} Baths</strong>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block">Total Area</span>
+                        <strong class="text-slate-800 text-base">${prop.sqft.toLocaleString()} sqft</strong>
+                    </div>
+                    <div>
+                        <span class="text-xs text-slate-400 block">Garage Spaces</span>
+                        <strong class="text-slate-800 text-base">${prop.garage} Cars</strong>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-slate-900 mb-2">Property Description</h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">${prop.description}</p>
+                </div>
+
+                <!-- Amenities -->
+                <div>
+                    <h4 class="font-serif text-lg font-bold text-slate-900 mb-3">Key Features & Amenities</h4>
+                    <div class="flex flex-wrap gap-2">
+                        ${prop.amenities.map(a => `
+                            <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-xl text-xs font-semibold flex items-center">
+                                <i class="fa-solid fa-check text-brand-500 mr-2"></i>${a}
+                            </span>
+                        `).join('')}
+                    </div>
+                </div>
+
+                <!-- Agent Contact Box -->
+                <div class="bg-brand-950 text-white p-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 rounded-full bg-brand-500 font-bold flex items-center justify-center text-slate-900 font-serif text-xl">
+                            VK
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Vikram Kalra</h4>
+                            <span class="text-xs text-slate-400">Principal Luxury Advisor</span>
+                        </div>
+                    </div>
+                    <a href="#contact" onclick="closeDetailsModal()" class="w-full sm:w-auto px-6 py-3 bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-xs rounded-xl transition-all text-center">
+                        Schedule Tour for This Property
+                    </a>
+                </div>
+            `;
+
+            document.getElementById('detailsModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeDetailsModal() {
+            document.getElementById('detailsModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Mortgage Calculator Logic
+        function updateCalculator() {
+            const price = parseFloat(document.getElementById('calcPrice').value);
+            const downPct = parseFloat(document.getElementById('calcDown').value);
+            const interest = parseFloat(document.getElementById('calcInterest').value);
+            const termYears = parseInt(document.getElementById('calcTerm').value);
+
+            const downVal = price * (downPct / 100);
+            const loanAmount = price - downVal;
+
+            document.getElementById('calcPriceVal').innerText = `$${price.toLocaleString()}`;
+            document.getElementById('calcDownVal').innerText = `${downPct}% ($${downVal.toLocaleString()})`;
+
+            const monthlyRate = (interest / 100) / 12;
+            const totalPayments = termYears * 12;
+
+            let monthlyPayment = 0;
+            if (monthlyRate > 0) {
+                monthlyPayment = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, totalPayments)) / (Math.pow(1 + monthlyRate, totalPayments) - 1);
+            } else {
+                monthlyPayment = loanAmount / totalPayments;
+            }
+
+            const totalRepayment = monthlyPayment * totalPayments;
+            const totalInterest = totalRepayment - loanAmount;
+            const estTaxes = (price * 0.008) / 12; // ~0.8% annual tax estimate
+
+            document.getElementById('calcMonthlyResult').innerText = `$${Math.round(monthlyPayment).toLocaleString()}`;
+            document.getElementById('calcTotalLoan').innerText = `$${Math.round(loanAmount).toLocaleString()}`;
+            document.getElementById('calcTotalInterest').innerText = `$${Math.round(totalInterest).toLocaleString()}`;
+            document.getElementById('calcTaxes').innerText = `$${Math.round(estTaxes).toLocaleString()}/mo`;
+        }
+
+        // Favorites Management
+        function toggleFavorite(id) {
+            if (favorites.includes(id)) {
+                favorites = favorites.filter(f => f !== id);
+                showToast('Property removed from favorites');
+            } else {
+                favorites.push(id);
+                showToast('Property saved to favorites!');
+            }
+            localStorage.setItem('kalra_favs', JSON.stringify(favorites));
+            updateFavBadge();
+            renderProperties();
+            renderFavoritesList();
+        }
+
+        function updateFavBadge() {
+            document.getElementById('favCount').innerText = favorites.length;
+        }
+
+        function renderFavoritesList() {
+            const container = document.getElementById('favoritesList');
+            const favProperties = propertiesData.filter(p => favorites.includes(p.id));
+
+            if (favProperties.length === 0) {
+                container.innerHTML = `<p class="text-sm text-slate-400 text-center py-8">No saved properties yet.</p>`;
+                return;
+            }
+
+            container.innerHTML = favProperties.map(p => `
+                <div class="flex items-center space-x-3 p-3 bg-slate-50 rounded-xl border border-slate-200">
+                    <img src="${p.image}" class="w-16 h-16 rounded-lg object-cover">
+                    <div class="flex-grow min-w-0">
+                        <h4 class="font-bold text-slate-800 text-xs truncate">${p.title}</h4>
+                        <span class="text-xs text-brand-600 font-bold">$${p.price.toLocaleString()}</span>
+                    </div>
+                    <button onclick="toggleFavorite(${p.id})" class="text-slate-400 hover:text-rose-500 p-2">
+                        <i class="fa-solid fa-trash text-sm"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function toggleFavoritesDrawer() {
+            const drawer = document.getElementById('favoritesDrawer');
+            renderFavoritesList();
+            drawer.classList.toggle('hidden');
+        }
+
+        // Compare Management
+        function toggleCompare(id) {
+            if (compareList.includes(id)) {
+                compareList = compareList.filter(c => c !== id);
+                showToast('Removed from comparison');
+            } else {
+                if (compareList.length >= 3) {
+                    showToast('You can compare max 3 properties');
+                    return;
+                }
+                compareList.push(id);
+                showToast('Added to comparison list');
+            }
+            document.getElementById('compareCount').innerText = compareList.length;
+            renderProperties();
+        }
+
+        function openCompareModal() {
+            if (compareList.length === 0) {
+                showToast('Please select properties to compare first!');
+                return;
+            }
+
+            const container = document.getElementById('compareTableContainer');
+            const comparedItems = propertiesData.filter(p => compareList.includes(p.id));
+
+            container.innerHTML = `
+                <table class="w-full text-left text-sm border-collapse">
+                    <thead>
+                        <tr class="border-b border-slate-200">
+                            <th class="p-3 text-slate-400 font-medium">Metric</th>
+                            ${comparedItems.map(item => `
+                                <th class="p-3 font-bold text-slate-900 min-w-[200px]">
+                                    <img src="${item.image}" class="w-full h-32 object-cover rounded-xl mb-2">
+                                    ${item.title}
+                                </th>
+                            `).join('')}
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100 text-slate-700">
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-500">Price</td>
+                            ${comparedItems.map(item => `<td class="p-3 font-bold text-brand-600">$${item.price.toLocaleString()}</td>`).join('')}
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-500">Location</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.location}</td>`).join('')}
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-500">Type</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.type}</td>`).join('')}
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-500">Bedrooms / Baths</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.beds} Bed / ${item.baths} Bath</td>`).join('')}
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-500">Total Area</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.sqft.toLocaleString()} sqft</td>`).join('')}
+                        </tr>
+                        <tr>
+                            <td class="p-3 font-semibold text-slate-500">Garage</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.garage} Vehicles</td>`).join('')}
+                        </tr>
+                    </tbody>
+                </table>
+            `;
+
+            document.getElementById('compareModal').classList.remove('hidden');
+        }
+
+        function closeCompareModal() {
+            document.getElementById('compareModal').classList.add('hidden');
+        }
+
+        // Search & Filtering Utilities
+        function filterProperties(category) {
+            currentFilterCategory = category;
+            
+            // Update Active Pill state
+            document.querySelectorAll('#filterPills button').forEach(btn => {
+                btn.classList.remove('bg-brand-900', 'text-white');
+                btn.classList.add('bg-slate-100', 'text-slate-700');
+            });
+            event.target.classList.remove('bg-slate-100', 'text-slate-700');
+            event.target.classList.add('bg-brand-900', 'text-white');
+
+            renderProperties();
+        }
+
+        function searchByKeyword() {
+            renderProperties();
+        }
+
+        function setSearchIntent(intent) {
+            currentIntent = intent;
+            ['Buy', 'Rent', 'Commercial'].forEach(t => {
+                const btn = document.getElementById(`btnIntent${t}`);
+                if (t.toLowerCase() === intent) {
+                    btn.className = "px-5 py-2 rounded-lg text-sm font-bold bg-brand-500 text-slate-900 transition-all";
+                } else {
+                    btn.className = "px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all";
+                }
+            });
+        }
+
+        function executeHeroSearch() {
+            const loc = document.getElementById('searchLocation').value.toLowerCase();
+            const type = document.getElementById('searchType').value;
+            const maxPrice = parseFloat(document.getElementById('searchMaxPrice').value) || Infinity;
+
+            if (type) {
+                currentFilterCategory = type;
+            }
+
+            document.getElementById('keywordSearch').value = loc;
+            renderProperties();
+
+            // Smooth scroll to property section
+            document.getElementById('properties').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Contact Form Handler
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            showToast('Thank you! A Kalra Associates senior representative will contact you within 2 hours.');
+            e.target.reset();
+        }
+
+        // Mobile Menu Toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Toast Feedback System
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toastMsg').innerText = message;
+            
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+
+        // Initialization
+        window.onload = function() {
+            updateFavBadge();
+            renderProperties();
+            updateCalculator();
+        };
+    </script>
+</body>
+</html>
