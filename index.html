@@ -79,6 +79,11 @@
     <div class="bg-brand-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 hidden md:block">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-6">
+                <!-- Dedicated Calling Phone Number -->
+                <a href="tel:+919810173274" class="hover:text-brand-500 transition-colors flex items-center font-semibold">
+                    <i class="fa-solid fa-phone text-brand-500 text-xs mr-1.5"></i>+91 98101 73274
+                </a>
+                <!-- WhatsApp Number -->
                 <a href="https://wa.me/15553115051?text=Hello%20Kalra%20Associates,%20I%20want%20to%20inquire%20about%20luxury%20properties." target="_blank" class="hover:text-whatsapp transition-colors flex items-center font-semibold">
                     <i class="fa-brands fa-whatsapp text-whatsapp text-sm mr-1.5"></i>+1 (555) 311-5051
                 </a>
@@ -141,8 +146,13 @@
 
                 <!-- Actions -->
                 <div class="flex items-center space-x-3">
+                    <!-- Direct Phone Call CTA -->
+                    <a href="tel:+919810173274" class="hidden sm:inline-flex items-center justify-center px-3.5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs transition-all shadow-md active:scale-95 border border-slate-700">
+                        <i class="fa-solid fa-phone text-brand-500 text-sm mr-2"></i> Call Us
+                    </a>
+
                     <!-- WhatsApp CTA -->
-                    <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20am%20looking for%20a%20luxury%20property%20consultation." target="_blank" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs transition-all shadow-md active:scale-95">
+                    <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20am%20looking%20for%20a%20luxury%20property%20consultation." target="_blank" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs transition-all shadow-md active:scale-95">
                         <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp
                     </a>
 
@@ -175,6 +185,9 @@
             <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">About Broker</a>
             <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Contact</a>
             
+            <a href="tel:+919810173274" class="block w-full text-center py-3 bg-slate-900 text-white rounded-xl font-semibold shadow-md flex items-center justify-center">
+                <i class="fa-solid fa-phone text-brand-500 text-base mr-2"></i> Direct Call (+91 98101 73274)
+            </a>
             <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20am%20looking%20for%20a%20luxury%20property%20consultation." target="_blank" class="block w-full text-center py-3 bg-emerald-600 text-white rounded-xl font-semibold shadow-md flex items-center justify-center">
                 <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Chat on WhatsApp (+1 555-311-5051)
             </a>
@@ -607,10 +620,25 @@
                         <div>
                             <span class="text-brand-500 font-bold text-xs tracking-widest uppercase">Get In Touch</span>
                             <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Speak With Principal Broker</h2>
-                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">Schedule a private consultation or send your requirement directly via WhatsApp for swift assistance.</p>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">Schedule a private consultation or reach out directly via Phone Call or WhatsApp for swift assistance.</p>
                         </div>
 
                         <div class="space-y-6 text-sm">
+                            <!-- Direct Phone Calling Line -->
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Direct Phone Calling Line</h4>
+                                    <a href="tel:+919810173274" class="text-brand-500 hover:underline text-base font-bold mt-0.5 block">
+                                        +91 98101 73274
+                                    </a>
+                                    <span class="text-xs text-slate-400">Available for Direct Phone Calls</span>
+                                </div>
+                            </div>
+
+                            <!-- WhatsApp Desk -->
                             <div class="flex items-start space-x-4">
                                 <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-whatsapp shrink-0 text-2xl">
                                     <i class="fa-brands fa-whatsapp"></i>
@@ -677,7 +705,7 @@
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number / WhatsApp *</label>
-                                    <input type="tel" required placeholder="+91 98100 00000" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                    <input type="tel" required placeholder="+91 98101 73274" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Requirement</label>
@@ -755,11 +783,16 @@
                     <p class="text-xs text-slate-400 leading-relaxed">
                         <i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Floor No.: Second Floor, Flat No.: 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi, South East Delhi, Delhi - 110076
                     </p>
+                    <!-- Phone Call in Footer -->
+                    <p class="text-xs text-slate-300">
+                        <i class="fa-solid fa-phone text-brand-500 mr-1.5"></i> Direct Call: <a href="tel:+919810173274" class="hover:text-brand-500 transition-colors font-bold text-white">+91 98101 73274</a>
+                    </p>
                     <div class="space-y-1 text-xs">
                         <p class="text-brand-500 font-semibold">GSTIN: 07AALCB2245C1Z1</p>
                     </div>
                     <div class="flex space-x-3 pt-2">
-                        <a href="https://wa.me/15553115051" target="_blank" class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white hover:opacity-90 transition-opacity"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="tel:+919810173274" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-700 flex items-center justify-center text-brand-500 hover:text-white transition-colors" title="Call +91 98101 73274"><i class="fa-solid fa-phone"></i></a>
+                        <a href="https://wa.me/15553115051" target="_blank" class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white hover:opacity-90 transition-opacity" title="WhatsApp +1 (555) 311-5051"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
                     </div>
@@ -790,11 +823,18 @@
 
                 <!-- Col 4 -->
                 <div>
-                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">WhatsApp Inquiry</h4>
-                    <p class="text-xs text-slate-400 mb-3">Connect directly on WhatsApp for off-market listings.</p>
-                    <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20please%20send%20off-market%20luxury%20listings." target="_blank" class="block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-lg text-xs transition-colors">
-                        <i class="fa-brands fa-whatsapp text-sm mr-1"></i> +1 (555) 311-5051
-                    </a>
+                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Direct Contact</h4>
+                    <p class="text-xs text-slate-400 mb-3">Connect directly via Phone Call or WhatsApp for instant assistance and off-market listings.</p>
+                    <div class="space-y-2.5">
+                        <!-- Direct Phone Calling Button -->
+                        <a href="tel:+919810173274" class="block w-full text-center bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-2.5 rounded-lg text-xs transition-colors shadow-md">
+                            <i class="fa-solid fa-phone text-sm mr-1.5"></i> Call: +91 98101 73274
+                        </a>
+                        <!-- WhatsApp Button -->
+                        <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20please%20send%20off-market%20luxury%20listings." target="_blank" class="block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-lg text-xs transition-colors shadow-md">
+                            <i class="fa-brands fa-whatsapp text-sm mr-1.5"></i> WhatsApp: +1 (555) 311-5051
+                        </a>
+                    </div>
                 </div>
             </div>
 
@@ -878,9 +918,9 @@
                     <p>At <strong>Kalra Associates</strong> (operated by <strong>BINVANT INFRATECH PRIVATE LIMITED</strong>), accessible from kalraassociates.in, one of our main priorities is the privacy of our clients and site visitors. This Privacy Policy outlines the types of information collected and how it is utilized in accordance with India's Digital Personal Data Protection Act (DPDP Act) and applicable Real Estate Laws.</p>
 
                     <h3 class="font-bold text-slate-900 text-base font-serif pt-2">1. Information We Collect</h3>
-                    <p>When you fill out consultation forms, request site visits, or contact us via WhatsApp/Email, we may collect personal details including:</p>
+                    <p>When you fill out consultation forms, request site visits, or contact us via WhatsApp/Email/Phone, we may collect personal details including:</p>
                     <ul class="list-disc pl-5 space-y-1 text-slate-600">
-                        <li>Full Name and Contact Number (WhatsApp/Phone)</li>
+                        <li>Full Name and Contact Number (Phone / WhatsApp)</li>
                         <li>Email Address</li>
                         <li>Property Preferences (Budget, Target Location, Unit Size)</li>
                         <li>Financial criteria relevant for home loan evaluation (where requested)</li>
@@ -890,7 +930,7 @@
                     <p>Your information is exclusively used for professional real estate advisory, including:</p>
                     <ul class="list-disc pl-5 space-y-1 text-slate-600">
                         <li>Arranging private site visits for shortlisted luxury properties.</li>
-                        <li>Communicating real estate advisory reports, market updates, and new developer launches via WhatsApp or email.</li>
+                        <li>Communicating real estate advisory reports, market updates, and new developer launches via Phone, WhatsApp or email.</li>
                         <li>Assisting in legal title verification and home loan processing upon your explicit request.</li>
                     </ul>
 
@@ -902,7 +942,7 @@
                     <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
                         <p><strong>Grievance Officer:</strong> BINVANT INFRATECH PRIVATE LIMITED</p>
                         <p><strong>Address:</strong> Second Floor, Flat No. 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi - 110076</p>
-                        <p><strong>Email:</strong> contact@kalraassociates.in | <strong>GSTIN:</strong> 07AALCB2245C1Z1</p>
+                        <p><strong>Direct Phone:</strong> +91 98101 73274 | <strong>Email:</strong> contact@kalraassociates.in | <strong>GSTIN:</strong> 07AALCB2245C1Z1</p>
                     </div>
                 </div>
 
@@ -946,6 +986,7 @@
                     <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700">
                         <p><strong>Corporate Identifier:</strong> BINVANT INFRATECH PRIVATE LIMITED</p>
                         <p><strong>Registered Address:</strong> Second Floor, Flat No. 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi - 110076</p>
+                        <p><strong>Direct Phone Calling Line:</strong> +91 98101 73274</p>
                         <p><strong>GST Certificate:</strong> 07AALCB2245C1Z1</p>
                     </div>
                 </div>
@@ -1211,6 +1252,9 @@
                             </div>
                             
                             <div class="flex space-x-2">
+                                <a href="tel:+919810173274" class="px-3 py-2 rounded-xl text-xs font-semibold bg-slate-900 text-brand-500 hover:text-white transition-all flex items-center" title="Call +91 98101 73274">
+                                    <i class="fa-solid fa-phone text-sm"></i>
+                                </a>
                                 <a href="https://wa.me/15553115051?text=${waMessage}" target="_blank" class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition-all flex items-center" title="WhatsApp Broker">
                                     <i class="fa-brands fa-whatsapp text-sm"></i>
                                 </a>
@@ -1312,6 +1356,9 @@
                         </div>
                     </div>
                     <div class="flex gap-2 w-full sm:w-auto">
+                        <a href="tel:+919810173274" class="flex-1 sm:flex-initial px-5 py-3 bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-xs rounded-xl transition-all text-center flex items-center justify-center">
+                            <i class="fa-solid fa-phone text-base mr-2"></i> Call (+91 98101 73274)
+                        </a>
                         <a href="https://wa.me/15553115051?text=${waMessage}" target="_blank" class="flex-1 sm:flex-initial px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl transition-all text-center flex items-center justify-center">
                             <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp (+1 555-311-5051)
                         </a>
