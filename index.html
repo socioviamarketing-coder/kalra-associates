@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kalra Associates | Luxury Real Estate & Property Advisory</title>
+    <title>Kalra Associates | Luxury Real Estate Brokerage & Property Advisory India</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- FontAwesome Icons -->
@@ -27,7 +27,8 @@
                             700: '#946f1a',
                             900: '#0f172a', // Deep slate navy
                             950: '#080d1a'
-                        }
+                        },
+                        whatsapp: '#25D366'
                     },
                     fontFamily: {
                         sans: ['Plus Jakarta Sans', 'sans-serif'],
@@ -78,9 +79,13 @@
     <div class="bg-brand-950 text-slate-300 text-xs py-2 px-4 border-b border-slate-800 hidden md:block">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center space-x-6">
-                <span><i class="fa-solid fa-phone text-brand-500 mr-2"></i>+1 555-311-5051</span>
-                <span><i class="fa-solid fa-envelope text-brand-500 mr-2"></i>contact@kalraassociates.com</span>
-                <span><i class="fa-solid fa-location-dot text-brand-500 mr-2"></i>Fifth Avenue, Suite 400, NY</span>
+                <a href="https://wa.me/15553115051?text=Hello%20Kalra%20Associates,%20I%20want%20to%20inquire%20about%20luxury%20properties." target="_blank" class="hover:text-whatsapp transition-colors flex items-center font-semibold">
+                    <i class="fa-brands fa-whatsapp text-whatsapp text-sm mr-1.5"></i>+1 (555) 311-5051
+                </a>
+                <a href="mailto:contact@kalraassociates.in" class="hover:text-brand-500 transition-colors flex items-center font-medium">
+                    <i class="fa-solid fa-envelope text-brand-500 mr-2"></i>contact@kalraassociates.in
+                </a>
+                <span class="text-slate-300 font-medium"><i class="fa-solid fa-file-invoice text-brand-500 mr-1"></i>GSTIN: 07AALCB2245C1Z1</span>
             </div>
             <div class="flex items-center space-x-4">
                 <span class="text-slate-400">Follow Us:</span>
@@ -98,27 +103,49 @@
                 
                 <!-- Logo -->
                 <a href="#" class="flex items-center space-x-3 group">
-                    <div class="w-11 h-11 bg-brand-900 rounded-xl flex items-center justify-center text-brand-500 font-serif text-2xl font-bold shadow-md border border-brand-500/30 group-hover:bg-brand-950 transition-colors">
-                        K
+                    <div class="h-10 w-auto flex items-center shrink-0">
+                        <svg viewBox="0 0 520 500" class="h-10 w-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Blue Top Swoosh -->
+                            <path d="M 5 210 C 150 195 280 140 460 10 C 270 170 150 225 5 210 Z" fill="#0072BC"/>
+                            <!-- Pink Bottom Swoosh -->
+                            <path d="M 5 290 C 150 305 280 360 460 490 C 270 330 150 275 5 290 Z" fill="#E24A73"/>
+                            <!-- Gold Arc -->
+                            <path d="M 175 25 C 240 160 240 340 175 475 C 200 340 200 160 175 25 Z" fill="#C5A468"/>
+                            <!-- Vertical Text ASSOCIATES -->
+                            <g fill="#1E293B" font-family="Arial, sans-serif" font-weight="900" font-size="34" text-anchor="middle">
+                                <text x="495" y="45">A</text>
+                                <text x="495" y="95">S</text>
+                                <text x="495" y="145">S</text>
+                                <text x="495" y="195">O</text>
+                                <text x="495" y="245">C</text>
+                                <text x="495" y="295">I</text>
+                                <text x="495" y="345">A</text>
+                                <text x="495" y="395">T</text>
+                                <text x="495" y="445">E</text>
+                                <text x="495" y="495">S</text>
+                            </g>
+                        </svg>
                     </div>
-                    <div class="flex flex-col">
-                        <span class="font-serif text-xl font-bold tracking-tight text-slate-900 leading-none">KALRA</span>
-                        <span class="text-[10px] font-semibold tracking-widest text-brand-600 uppercase">Associates Real Estate</span>
-                    </div>
+                    <span class="font-serif text-xl font-bold tracking-tight text-slate-900">KALRA ASSOCIATES</span>
                 </a>
 
                 <!-- Desktop Nav -->
                 <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-700">
                     <a href="#hero" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Home</a>
-                    <a href="#properties" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Properties</a>
-                    <a href="#services" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Services</a>
-                    <a href="#calculator" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Mortgage Calculator</a>
-                    <a href="#about" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">About Us</a>
+                    <a href="#properties" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Prime Listings</a>
+                    <a href="#services" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Brokerage Services</a>
+                    <a href="#calculator" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Home Loan Calculator</a>
+                    <a href="#about" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">About Broker</a>
                     <a href="#contact" class="hover:text-brand-600 transition-colors py-2 border-b-2 border-transparent hover:border-brand-500">Contact</a>
                 </nav>
 
                 <!-- Actions -->
                 <div class="flex items-center space-x-3">
+                    <!-- WhatsApp CTA -->
+                    <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20am%20looking for%20a%20luxury%20property%20consultation." target="_blank" class="hidden sm:inline-flex items-center justify-center px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs transition-all shadow-md active:scale-95">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp
+                    </a>
+
                     <!-- Favorites Drawer Button -->
                     <button onclick="toggleFavoritesDrawer()" class="relative p-2.5 rounded-xl text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all" title="Saved Properties">
                         <i class="fa-regular fa-heart text-xl"></i>
@@ -127,14 +154,9 @@
 
                     <!-- Compare Drawer Button -->
                     <button onclick="openCompareModal()" class="relative p-2.5 rounded-xl text-slate-600 hover:text-brand-600 hover:bg-slate-100 transition-all" title="Compare Properties">
-                        <i class="fa-solid fa-[#fa-sliders] fa-code-compare text-xl"></i>
+                        <i class="fa-solid fa-code-compare text-xl"></i>
                         <span id="compareCount" class="absolute -top-1 -right-1 bg-slate-900 text-white text-[11px] font-bold w-5 h-5 rounded-full flex items-center justify-center border-2 border-white">0</span>
                     </button>
-
-                    <!-- Call CTA Button -->
-                    <a href="#contact" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-brand-900 text-white font-semibold text-sm shadow-md hover:bg-brand-950 transition-all hover:shadow-lg border border-brand-500/20 active:scale-95">
-                        <i class="fa-regular fa-calendar-check mr-2 text-brand-500"></i> Book Consultation
-                    </a>
 
                     <!-- Mobile Menu Button -->
                     <button onclick="toggleMobileMenu()" class="lg:hidden p-2.5 text-slate-700 hover:bg-slate-100 rounded-xl">
@@ -147,13 +169,14 @@
         <!-- Mobile Navigation Menu -->
         <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
             <a href="#hero" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Home</a>
-            <a href="#properties" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Properties</a>
-            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Services</a>
-            <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Mortgage Calculator</a>
-            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">About Us</a>
+            <a href="#properties" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Prime Listings</a>
+            <a href="#services" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Brokerage Services</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Home Loan Calculator</a>
+            <a href="#about" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">About Broker</a>
             <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-700 font-medium hover:text-brand-600">Contact</a>
-            <a href="#contact" onclick="toggleMobileMenu()" class="block w-full text-center py-3 bg-brand-900 text-white rounded-xl font-semibold shadow-md">
-                Schedule Advisory Call
+            
+            <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20am%20looking%20for%20a%20luxury%20property%20consultation." target="_blank" class="block w-full text-center py-3 bg-emerald-600 text-white rounded-xl font-semibold shadow-md flex items-center justify-center">
+                <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Chat on WhatsApp (+1 555-311-5051)
             </a>
         </div>
     </header>
@@ -161,12 +184,12 @@
     <main class="flex-grow">
         <!-- Hero Section -->
         <section id="hero" class="relative min-h-[85vh] flex items-center justify-center bg-brand-950 text-white overflow-hidden py-20 px-4">
-            <!-- Background Image Overlay with Dark Gradient -->
+            <!-- Background Image Overlay -->
             <div class="absolute inset-0 z-0">
                 <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2000&q=80" 
                      onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=2000&q=80'" 
-                     alt="Luxury Architecture" 
-                     class="w-full h-full object-cover object-center opacity-35 scale-105 animate-pulse" style="animation-duration: 10s;">
+                     alt="Luxury Indian Architecture" 
+                     class="w-full h-full object-cover object-center opacity-35 scale-105">
                 <div class="absolute inset-0 bg-gradient-to-t from-brand-950 via-brand-950/70 to-transparent"></div>
             </div>
 
@@ -174,18 +197,18 @@
                 <!-- Tagline Badge -->
                 <div class="inline-flex items-center space-x-2 bg-slate-800/80 backdrop-blur-md px-4 py-2 rounded-full border border-brand-500/40 text-xs font-semibold tracking-wider uppercase text-brand-500 shadow-xl">
                     <span class="w-2 h-2 rounded-full bg-brand-500 animate-ping"></span>
-                    <span>Exclusive Property Portfolio 2026</span>
+                    <span>Delhi NCR & Pan-India Premier Real Estate Brokerage</span>
                 </div>
 
                 <!-- Headline -->
                 <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight leading-tight text-white">
-                    Discover Architectural <br class="hidden sm:inline"/>
-                    <span class="gold-text italic">Masterpieces & Luxury Living</span>
+                    India's Finest <br class="hidden sm:inline"/>
+                    <span class="gold-text italic">Luxury Homes, Builder Floors & Penthouses</span>
                 </h1>
 
                 <!-- Subtitle -->
                 <p class="text-slate-300 text-base sm:text-lg md:text-xl max-w-2xl mx-auto font-light leading-relaxed">
-                    Kalra Associates provides bespoke real estate solutions, premium residential estates, and strategic commercial properties tailored to your lifestyle.
+                    Kalra Associates provides certified real estate brokerage services, luxury residential advisory, and high-yielding commercial property investments across Gurugram, Delhi NCR, Mumbai & Goa.
                 </p>
 
                 <!-- Property Search Widget Container -->
@@ -193,24 +216,25 @@
                     <div class="glass-panel p-4 sm:p-6 rounded-2xl shadow-2xl text-left border border-white/20">
                         <!-- Search Tabs -->
                         <div class="flex space-x-2 mb-4 border-b border-white/10 pb-3">
-                            <button onclick="setSearchIntent('buy')" id="btnIntentBuy" class="px-5 py-2 rounded-lg text-sm font-bold bg-brand-500 text-slate-900 transition-all">Buy</button>
-                            <button onclick="setSearchIntent('rent')" id="btnIntentRent" class="px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all">Rent</button>
-                            <button onclick="setSearchIntent('commercial')" id="btnIntentCommercial" class="px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all">Commercial</button>
+                            <button onclick="setSearchIntent('buy')" id="btnIntentBuy" class="px-5 py-2 rounded-lg text-sm font-bold bg-brand-500 text-slate-900 transition-all">Buy Property</button>
+                            <button onclick="setSearchIntent('rent')" id="btnIntentRent" class="px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all">Rent / Lease</button>
+                            <button onclick="setSearchIntent('commercial')" id="btnIntentCommercial" class="px-5 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-white hover:bg-white/10 transition-all">Commercial Assets</button>
                         </div>
 
                         <!-- Filter Fields -->
                         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
                             <!-- Location Dropdown -->
                             <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Location</label>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Prime Location</label>
                                 <div class="relative">
                                     <i class="fa-solid fa-location-dot absolute left-3 top-3.5 text-brand-500 text-sm"></i>
                                     <select id="searchLocation" class="w-full bg-slate-900/90 text-white text-sm rounded-xl pl-9 pr-3 py-3 border border-slate-700 focus:outline-none focus:border-brand-500">
-                                        <option value="">All Locations</option>
-                                        <option value="Manhattan">Manhattan, NY</option>
-                                        <option value="Beverly Hills">Beverly Hills, CA</option>
-                                        <option value="Miami Beach">Miami Beach, FL</option>
-                                        <option value="Aspen">Aspen, CO</option>
+                                        <option value="">All Regions</option>
+                                        <option value="Gurugram">Gurugram (Golf Course Rd / DLF)</option>
+                                        <option value="South Delhi">South Delhi (Vasant Vihar / Greater Kailash)</option>
+                                        <option value="Mumbai">Mumbai (Worli / Bandra West)</option>
+                                        <option value="Goa">North Goa (Assagao / Anjuna)</option>
+                                        <option value="Bengaluru">Bengaluru (Indiranagar / UB City)</option>
                                     </select>
                                 </div>
                             </div>
@@ -221,26 +245,26 @@
                                 <div class="relative">
                                     <i class="fa-solid fa-building absolute left-3 top-3.5 text-brand-500 text-sm"></i>
                                     <select id="searchType" class="w-full bg-slate-900/90 text-white text-sm rounded-xl pl-9 pr-3 py-3 border border-slate-700 focus:outline-none focus:border-brand-500">
-                                        <option value="">All Types</option>
-                                        <option value="Villa">Luxury Villa</option>
-                                        <option value="Penthouse">Penthouse</option>
-                                        <option value="Apartment">Modern Apartment</option>
-                                        <option value="Estate">Private Estate</option>
+                                        <option value="">All Categories</option>
+                                        <option value="Builder Floor">Luxury Builder Floor</option>
+                                        <option value="Penthouse">Sky Penthouse</option>
+                                        <option value="Villa">Private Farmhouse / Villa</option>
+                                        <option value="Apartment">High-Rise Apartment</option>
                                     </select>
                                 </div>
                             </div>
 
-                            <!-- Price Range -->
+                            <!-- Price Range in INR -->
                             <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Max Price</label>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-300 mb-1">Budget (INR)</label>
                                 <div class="relative">
-                                    <i class="fa-solid fa-dollar-sign absolute left-3 top-3.5 text-brand-500 text-sm"></i>
+                                    <i class="fa-solid fa-indian-rupee-sign absolute left-3 top-3.5 text-brand-500 text-sm"></i>
                                     <select id="searchMaxPrice" class="w-full bg-slate-900/90 text-white text-sm rounded-xl pl-9 pr-3 py-3 border border-slate-700 focus:outline-none focus:border-brand-500">
                                         <option value="">Any Budget</option>
-                                        <option value="2000000">Up to $2,000,000</option>
-                                        <option value="5000000">Up to $5,000,000</option>
-                                        <option value="10000000">Up to $10,000,000</option>
-                                        <option value="25000000">Up to $25,000,000</option>
+                                        <option value="50000000">Up to ₹5 Crores</option>
+                                        <option value="120000000">Up to ₹12 Crores</option>
+                                        <option value="200000000">Up to ₹20 Crores</option>
+                                        <option value="500000000">Up to ₹50 Crores</option>
                                     </select>
                                 </div>
                             </div>
@@ -248,7 +272,7 @@
                             <!-- Submit Search -->
                             <div class="flex items-end">
                                 <button onclick="executeHeroSearch()" class="w-full gold-gradient hover:opacity-95 text-slate-950 font-bold py-3 px-6 rounded-xl flex items-center justify-center shadow-lg transition-all active:scale-95">
-                                    <i class="fa-solid fa-magnifying-glass mr-2"></i> Search
+                                    <i class="fa-solid fa-magnifying-glass mr-2"></i> Search Properties
                                 </button>
                             </div>
                         </div>
@@ -262,20 +286,20 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     <div class="space-y-1">
-                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">$2.4B+</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Gross Property Sales</div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">₹3,500+ Cr</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Gross Property Transactions</div>
                     </div>
                     <div class="space-y-1">
-                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">1,850+</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Luxury Homes Handled</div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">2,400+</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Families & Investors Served</div>
                     </div>
                     <div class="space-y-1">
-                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">25+</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Years Excellence</div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">25+ Yrs</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Brokerage Legacy in India</div>
                     </div>
                     <div class="space-y-1">
-                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">99.4%</div>
-                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Client Satisfaction</div>
+                        <div class="font-serif text-3xl sm:text-4xl font-bold text-brand-500">100%</div>
+                        <div class="text-xs sm:text-sm text-slate-400 font-medium">Clear Title Verification</div>
                     </div>
                 </div>
             </div>
@@ -285,27 +309,27 @@
         <section id="properties" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
                 <div>
-                    <span class="text-brand-600 font-bold uppercase tracking-wider text-xs">Exclusive Showcase</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Featured Real Estate Portfolio</h2>
+                    <span class="text-brand-600 font-bold uppercase tracking-wider text-xs">Brokerage Exclusive</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-1">Featured Prime Indian Real Estate</h2>
                 </div>
                 <!-- Interactive Filter Pills -->
                 <div class="mt-6 md:mt-0 flex flex-wrap gap-2" id="filterPills">
                     <button onclick="filterProperties('all')" class="filter-btn active-pill px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-brand-900 text-white">All Properties</button>
-                    <button onclick="filterProperties('Villa')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Villas</button>
+                    <button onclick="filterProperties('Builder Floor')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Builder Floors</button>
                     <button onclick="filterProperties('Penthouse')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Penthouses</button>
-                    <button onclick="filterProperties('Apartment')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Apartments</button>
-                    <button onclick="filterProperties('Estate')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Estates</button>
+                    <button onclick="filterProperties('Villa')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">Villas & Farmhouses</button>
+                    <button onclick="filterProperties('Apartment')" class="filter-btn px-4 py-2 rounded-xl text-sm font-semibold transition-all bg-slate-100 text-slate-700 hover:bg-slate-200">High-Rise Condos</button>
                 </div>
             </div>
 
-            <!-- Property Search Input inside section for fine tuning -->
+            <!-- Property Search Input -->
             <div class="mb-8 flex flex-col sm:flex-row gap-4 justify-between items-center bg-slate-100 p-4 rounded-2xl">
                 <div class="relative w-full sm:w-80">
                     <i class="fa-solid fa-magnifying-glass absolute left-3 top-3.5 text-slate-400"></i>
-                    <input type="text" id="keywordSearch" onkeyup="searchByKeyword()" placeholder="Search by name or city..." class="w-full pl-9 pr-4 py-2.5 bg-white rounded-xl text-sm border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500">
+                    <input type="text" id="keywordSearch" onkeyup="searchByKeyword()" placeholder="Search by city, sector or project..." class="w-full pl-9 pr-4 py-2.5 bg-white rounded-xl text-sm border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500">
                 </div>
                 <div class="text-sm text-slate-500 font-medium flex items-center gap-2">
-                    <span>Showing <strong id="visibleCount" class="text-slate-900">0</strong> properties</span>
+                    <span>Showing <strong id="visibleCount" class="text-slate-900">0</strong> available properties</span>
                 </div>
             </div>
 
@@ -315,28 +339,28 @@
             </div>
         </section>
 
-        <!-- Interactive Mortgage Calculator -->
+        <!-- Interactive Home Loan Calculator (Indian Standard) -->
         <section id="calculator" class="py-20 bg-slate-900 text-white relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
                     <span class="text-brand-500 font-bold text-xs tracking-widest uppercase">Financial Advisory</span>
-                    <h2 class="font-serif text-3xl sm:text-4xl font-bold">Mortgage & Financing Calculator</h2>
-                    <p class="text-slate-400 text-sm">Estimate your monthly mortgage payments based on purchase price, interest rates, and loan terms.</p>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold">Indian Home Loan & EMI Calculator</h2>
+                    <p class="text-slate-400 text-sm">Calculate your monthly EMI based on property price in Crores, down payment %, and prevailing Indian bank interest rates.</p>
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
                     <!-- Controls -->
                     <div class="lg:col-span-7 space-y-6 bg-slate-800/60 p-6 sm:p-8 rounded-2xl border border-slate-700/60">
-                        <!-- Home Price Slider -->
+                        <!-- Property Price Slider in Crores -->
                         <div>
                             <div class="flex justify-between items-center mb-2">
                                 <label class="text-sm font-semibold text-slate-300">Property Purchase Price</label>
-                                <span id="calcPriceVal" class="text-lg font-bold text-brand-500">$3,500,000</span>
+                                <span id="calcPriceVal" class="text-lg font-bold text-brand-500">₹ 5.00 Crores</span>
                             </div>
-                            <input type="range" id="calcPrice" min="500000" max="20000000" step="100000" value="3500000" oninput="updateCalculator()" class="w-full accent-brand-500 cursor-pointer">
+                            <input type="range" id="calcPrice" min="5000000" max="500000000" step="2500000" value="50000000" oninput="updateCalculator()" class="w-full accent-brand-500 cursor-pointer">
                             <div class="flex justify-between text-xs text-slate-500 mt-1">
-                                <span>$500K</span>
-                                <span>$20M</span>
+                                <span>₹50 Lakhs</span>
+                                <span>₹50 Crores</span>
                             </div>
                         </div>
 
@@ -344,11 +368,11 @@
                         <div>
                             <div class="flex justify-between items-center mb-2">
                                 <label class="text-sm font-semibold text-slate-300">Down Payment (%)</label>
-                                <span id="calcDownVal" class="text-lg font-bold text-brand-500">20% ($700,000)</span>
+                                <span id="calcDownVal" class="text-lg font-bold text-brand-500">20% (₹ 1.00 Cr)</span>
                             </div>
-                            <input type="range" id="calcDown" min="5" max="50" step="1" value="20" oninput="updateCalculator()" class="w-full accent-brand-500 cursor-pointer">
+                            <input type="range" id="calcDown" min="10" max="50" step="5" value="20" oninput="updateCalculator()" class="w-full accent-brand-500 cursor-pointer">
                             <div class="flex justify-between text-xs text-slate-500 mt-1">
-                                <span>5%</span>
+                                <span>10%</span>
                                 <span>50%</span>
                             </div>
                         </div>
@@ -356,17 +380,18 @@
                         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             <!-- Interest Rate -->
                             <div>
-                                <label class="block text-sm font-semibold text-slate-300 mb-2">Interest Rate (%)</label>
-                                <input type="number" id="calcInterest" value="6.5" step="0.1" min="1" max="15" oninput="updateCalculator()" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-3 px-4 text-white font-semibold focus:outline-none focus:border-brand-500">
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">Interest Rate (% p.a.)</label>
+                                <input type="number" id="calcInterest" value="8.5" step="0.1" min="5" max="15" oninput="updateCalculator()" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-3 px-4 text-white font-semibold focus:outline-none focus:border-brand-500">
                             </div>
 
                             <!-- Loan Term -->
                             <div>
-                                <label class="block text-sm font-semibold text-slate-300 mb-2">Loan Term (Years)</label>
+                                <label class="block text-sm font-semibold text-slate-300 mb-2">Tenure (Years)</label>
                                 <select id="calcTerm" onchange="updateCalculator()" class="w-full bg-slate-900 border border-slate-700 rounded-xl py-3 px-4 text-white font-semibold focus:outline-none focus:border-brand-500">
+                                    <option value="10">10 Years</option>
                                     <option value="15">15 Years</option>
-                                    <option value="20">20 Years</option>
-                                    <option value="30" selected>30 Years</option>
+                                    <option value="20" selected>20 Years</option>
+                                    <option value="30">30 Years</option>
                                 </select>
                             </div>
                         </div>
@@ -377,27 +402,27 @@
                         <div class="glass-panel p-8 rounded-2xl border border-brand-500/30 text-center space-y-6 relative overflow-hidden">
                             <div class="absolute -right-10 -top-10 w-40 h-40 bg-brand-500/10 rounded-full blur-2xl pointer-events-none"></div>
                             
-                            <span class="text-slate-400 text-xs uppercase tracking-widest font-semibold">Estimated Monthly Payment</span>
-                            <div id="calcMonthlyResult" class="font-serif text-5xl font-bold gold-text">$17,698</div>
-                            <span class="text-xs text-slate-400 block">/ per month (Principal & Interest)</span>
+                            <span class="text-slate-400 text-xs uppercase tracking-widest font-semibold">Estimated Monthly EMI</span>
+                            <div id="calcMonthlyResult" class="font-serif text-4xl sm:text-5xl font-bold gold-text">₹ 3,47,130</div>
+                            <span class="text-xs text-slate-400 block">/ month (Principal & Interest)</span>
 
                             <div class="border-t border-slate-700 pt-6 space-y-3 text-left text-sm">
                                 <div class="flex justify-between">
-                                    <span class="text-slate-400">Total Loan Amount:</span>
-                                    <span id="calcTotalLoan" class="font-bold text-slate-200">$2,800,000</span>
+                                    <span class="text-slate-400">Total Loan Principal:</span>
+                                    <span id="calcTotalLoan" class="font-bold text-slate-200">₹ 4,00,00,000</span>
                                 </div>
                                 <div class="flex justify-between">
                                     <span class="text-slate-400">Total Interest Payable:</span>
-                                    <span id="calcTotalInterest" class="font-bold text-slate-200">$3,571,418</span>
+                                    <span id="calcTotalInterest" class="font-bold text-slate-200">₹ 4,33,11,180</span>
                                 </div>
                                 <div class="flex justify-between">
-                                    <span class="text-slate-400">Est. Taxes & Insurance:</span>
-                                    <span id="calcTaxes" class="font-bold text-slate-200">$1,850/mo</span>
+                                    <span class="text-slate-400">Est. Stamp Duty & Registry (approx):</span>
+                                    <span id="calcTaxes" class="font-bold text-slate-200">₹ 30,00,000 (one-time)</span>
                                 </div>
                             </div>
 
-                            <a href="#contact" class="block w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold rounded-xl transition-all shadow-lg text-center">
-                                Get Pre-Approved Today
+                            <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20would%20like%20assistance%20with%20Home%20Loan%20Pre-approval." target="_blank" class="block w-full py-3.5 bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold rounded-xl transition-all shadow-lg text-center flex items-center justify-center">
+                                <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Get Home Loan Guidance
                             </a>
                         </div>
                     </div>
@@ -408,9 +433,9 @@
         <!-- Our Services Section -->
         <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Bespoke Solutions</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">Comprehensive Advisory Services</h2>
-                <p class="text-slate-600 text-sm">Providing high-net-worth individuals and investors with unparalleled market expertise and confidential real estate guidance.</p>
+                <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Professional Real Estate Brokerage</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">End-to-End Property Advisory</h2>
+                <p class="text-slate-600 text-sm">Navigating high-value Indian real estate with total transparency, legal due diligence, and market expertise.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -420,25 +445,25 @@
                         <i class="fa-solid fa-house-chimney-window"></i>
                     </div>
                     <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Residential Buying & Selling</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">End-to-end representation for acquiring or marketing luxury luxury villas, estates, and urban penthouses.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Representing high-net-worth buyers and sellers for luxury builder floors, high-rise penthouses, and gated villas.</p>
                 </div>
 
                 <!-- Service Card 2 -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-1 group">
                     <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
-                        <i class="fa-solid fa-chart-line"></i>
+                        <i class="fa-solid fa-[#fa-file-signature] fa-file-contract"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Property Investment Advisory</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Data-driven market intelligence to optimize portfolio yield, property acquisition, and capital growth.</p>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Title Verification & Registry</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Thorough legal search reports, MCD/DTCP approvals, encumbrance certificates, and seamless registry assistance.</p>
                 </div>
 
                 <!-- Service Card 3 -->
                 <div class="bg-white p-8 rounded-2xl border border-slate-200 hover:shadow-xl transition-all hover:-translate-y-1 group">
                     <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
-                        <i class="fa-solid fa-[#fa-shield-halved] fa-scale-balanced"></i>
+                        <i class="fa-solid fa-building-user"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Legal & Documentation</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Full legal compliance, title verification, escrow management, and seamless documentation support.</p>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Commercial Leasing & Pre-Leased</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">High-ROI pre-leased commercial office spaces, retail shops, and corporate leasing solutions in prime hubs.</p>
                 </div>
 
                 <!-- Service Card 4 -->
@@ -446,8 +471,8 @@
                     <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-900 group-hover:text-brand-500 transition-colors">
                         <i class="fa-solid fa-key"></i>
                     </div>
-                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Property Management</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed">Premium asset upkeep, high-end tenant curation, lease management, and routine maintenance.</p>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">NRI Property Management</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Dedicated property management, tenant onboarding, rental collection, and property upkeep for NRIs.</p>
                 </div>
             </div>
         </section>
@@ -463,21 +488,21 @@
                                  onerror="this.src='https://images.unsplash.com/photo-1582407947304-fd86f028f716?auto=format&fit=crop&w=1000&q=80'" 
                                  alt="Kalra Associates Office" class="w-full h-[480px] object-cover">
                         </div>
-                        <div class="absolute -bottom-6 -right-6 w-64 bg-brand-900 text-white p-6 rounded-2xl shadow-xl z-20 hidden sm:block border border-brand-500/30">
-                            <p class="font-serif italic text-sm text-slate-300">"Trust and excellence are the bedrock of every relationship we build."</p>
-                            <span class="block mt-2 font-bold text-brand-500 text-sm">— Vikram Kalra, Founder</span>
+                        <div class="absolute -bottom-6 -right-6 w-72 bg-brand-900 text-white p-6 rounded-2xl shadow-xl z-20 hidden sm:block border border-brand-500/30">
+                            <p class="font-serif italic text-sm text-slate-300">"Honesty and market insight are the pillars of real estate trust."</p>
+                            <span class="block mt-2 font-bold text-brand-500 text-sm">— Vikram Kalra, Founder & Managing Broker</span>
                         </div>
                     </div>
 
                     <!-- Narrative -->
                     <div class="space-y-6">
-                        <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Legacy & Excellence</span>
-                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">Setting the Gold Standard in Luxury Real Estate</h2>
+                        <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">25+ Years Brokerage Trust</span>
+                        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">Your Trusted Real Estate Partner in India</h2>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Established over two decades ago, Kalra Associates has evolved into one of the most recognized leadership names in high-end real estate brokerage and advisory.
+                            Established in 1999, Kalra Associates has built an enviable reputation as a leading luxury real estate broker and property advisor across Delhi NCR and major Indian metros.
                         </p>
                         <p class="text-slate-600 text-sm leading-relaxed">
-                            Our team combines deep localized insights with global reach, curating architectural gems and high-value investment assets. Whether purchasing a primary residence, acquiring commercial footprints, or seeking discrete off-market opportunities, we provide unmatched discretion and performance.
+                            We specialize in off-market luxury builder floors in South Delhi, Golf Course Road penthouses in Gurugram, sea-facing Mumbai residences, and holiday villas in Goa. Every deal is backed by rigorous legal verification and clear title guarantees.
                         </p>
 
                         <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-200">
@@ -485,13 +510,13 @@
                                 <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">
                                     <i class="fa-solid fa-circle-check"></i>
                                 </div>
-                                <span class="font-semibold text-sm text-slate-800">Discrete Off-Market Deals</span>
+                                <span class="font-semibold text-sm text-slate-800">Clear Title Guarantee</span>
                             </div>
                             <div class="flex items-center space-x-3">
                                 <div class="w-10 h-10 rounded-lg bg-brand-50 text-brand-600 flex items-center justify-center font-bold">
                                     <i class="fa-solid fa-circle-check"></i>
                                 </div>
-                                <span class="font-semibold text-sm text-slate-800">Global Buyer Network</span>
+                                <span class="font-semibold text-sm text-slate-800">Direct Builder Ties</span>
                             </div>
                         </div>
                     </div>
@@ -502,8 +527,8 @@
         <!-- Testimonials -->
         <section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
             <div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
-                <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Client Endorsements</span>
-                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">What Our Distinction Clients Say</h2>
+                <span class="text-brand-600 font-bold text-xs tracking-widest uppercase">Client Testimonials</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900">What Our Clients Say</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -514,16 +539,16 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-slate-600 text-sm italic leading-relaxed">
-                            "Kalra Associates delivered an off-market penthouse in Manhattan that exceeded all our expectations. Their negotiation skills and discretion were phenomenal."
+                            "Kalra Associates helped us secure an exclusive Golf Course Road penthouse in Gurugram. Vikram Ji's negotiation skills and clear title check saved us immense time."
                         </p>
                     </div>
                     <div class="flex items-center space-x-4 pt-4 border-t border-slate-100">
                         <div class="w-11 h-11 rounded-full bg-slate-200 font-bold flex items-center justify-center text-slate-700 font-serif">
-                            RH
+                            AK
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Richard Harrison</h4>
-                            <span class="text-xs text-slate-400">Hedge Fund Director</span>
+                            <h4 class="font-bold text-slate-900 text-sm">Amit Khanna</h4>
+                            <span class="text-xs text-slate-400">Managing Director, Tech Capital</span>
                         </div>
                     </div>
                 </div>
@@ -535,16 +560,16 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-slate-600 text-sm italic leading-relaxed">
-                            "Selling our Beverly Hills estate through Kalra Associates was remarkably smooth. Their high-end staging and digital video tour produced three full-price offers in a week."
+                            "As an NRI living in London, selling our South Delhi luxury builder floor seemed stressful. Kalra Associates handled everything seamlessly on WhatsApp and wire transfer."
                         </p>
                     </div>
                     <div class="flex items-center space-x-4 pt-4 border-t border-slate-100">
                         <div class="w-11 h-11 rounded-full bg-slate-200 font-bold flex items-center justify-center text-slate-700 font-serif">
-                            SK
+                            SM
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Sophia Kapoor</h4>
-                            <span class="text-xs text-slate-400">Architectural Designer</span>
+                            <h4 class="font-bold text-slate-900 text-sm">Sunita Malhotra</h4>
+                            <span class="text-xs text-slate-400">UK Resident & Investor</span>
                         </div>
                     </div>
                 </div>
@@ -556,16 +581,16 @@
                             <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
                         <p class="text-slate-600 text-sm italic leading-relaxed">
-                            "The mortgage advisory and legal clarity provided by Mr. Kalra's senior team gave us total peace of mind for our multi-million dollar property acquisition."
+                            "Their commercial pre-leased asset advice was spot on. Yields in Gurugram Cyber City are consistent and registry was completed without any hassle."
                         </p>
                     </div>
                     <div class="flex items-center space-x-4 pt-4 border-t border-slate-100">
                         <div class="w-11 h-11 rounded-full bg-slate-200 font-bold flex items-center justify-center text-slate-700 font-serif">
-                            MV
+                            RP
                         </div>
                         <div>
-                            <h4 class="font-bold text-slate-900 text-sm">Marcus Vance</h4>
-                            <span class="text-xs text-slate-400">Tech Entrepreneur</span>
+                            <h4 class="font-bold text-slate-900 text-sm">Rajeev Puri</h4>
+                            <span class="text-xs text-slate-400">Industrialist</span>
                         </div>
                     </div>
                 </div>
@@ -581,28 +606,43 @@
                     <div class="lg:col-span-5 space-y-8">
                         <div>
                             <span class="text-brand-500 font-bold text-xs tracking-widest uppercase">Get In Touch</span>
-                            <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Let's Discuss Your Real Estate Goals</h2>
-                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">Schedule a private consultation with our principal advisors to explore exclusive listings or list your property.</p>
+                            <h2 class="font-serif text-3xl sm:text-4xl font-bold mt-2">Speak With Principal Broker</h2>
+                            <p class="text-slate-400 text-sm mt-3 leading-relaxed">Schedule a private consultation or send your requirement directly via WhatsApp for swift assistance.</p>
                         </div>
 
                         <div class="space-y-6 text-sm">
                             <div class="flex items-start space-x-4">
-                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
-                                    <i class="fa-solid fa-location-dot"></i>
+                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-whatsapp shrink-0 text-2xl">
+                                    <i class="fa-brands fa-whatsapp"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Headquarters</h4>
-                                    <p class="text-slate-400 mt-0.5">745 Fifth Avenue, 28th Floor, New York, NY 10151</p>
+                                    <h4 class="font-semibold text-white">Direct WhatsApp Desk</h4>
+                                    <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20I%20am%20interested%20in%20a%20property%20consultation." target="_blank" class="text-whatsapp hover:underline text-base font-bold mt-0.5 block">
+                                        +1 (555) 311-5051
+                                    </a>
                                 </div>
                             </div>
 
                             <div class="flex items-start space-x-4">
                                 <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
-                                    <i class="fa-solid fa-phone"></i>
+                                    <i class="fa-solid fa-location-dot"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Direct Advisory Phone</h4>
-                                    <p class="text-slate-400 mt-0.5">+1 (800) 555-KALRA / +1 (212) 890-4421</p>
+                                    <h4 class="font-semibold text-white">Corporate Office</h4>
+                                    <p class="text-slate-400 mt-0.5 leading-relaxed">
+                                        Second Floor, Flat No. 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi, South East Delhi, Delhi - 110076
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-4">
+                                <div class="w-12 h-12 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-500 shrink-0 text-xl">
+                                    <i class="fa-solid fa-id-card"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-white">Legal & Tax Identifiers</h4>
+                                    <p class="text-slate-400 mt-0.5"><strong>Legal Entity:</strong> BINVANT INFRATECH PRIVATE LIMITED</p>
+                                    <p class="text-slate-400"><strong>GST Certificate No.:</strong> 07AALCB2245C1Z1</p>
                                 </div>
                             </div>
 
@@ -611,8 +651,8 @@
                                     <i class="fa-solid fa-envelope"></i>
                                 </div>
                                 <div>
-                                    <h4 class="font-semibold text-white">Private Email Desk</h4>
-                                    <p class="text-slate-400 mt-0.5">advisory@kalraassociates.com</p>
+                                    <h4 class="font-semibold text-white">Email Consultation</h4>
+                                    <a href="mailto:contact@kalraassociates.in" class="text-slate-400 hover:text-brand-500 transition-colors mt-0.5 block">contact@kalraassociates.in</a>
                                 </div>
                             </div>
                         </div>
@@ -621,42 +661,42 @@
                     <!-- Form Container -->
                     <div class="lg:col-span-7">
                         <form id="contactForm" onsubmit="handleContactSubmit(event)" class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 space-y-6">
-                            <h3 class="font-serif text-2xl font-bold text-white mb-2">Request Private Call Back</h3>
+                            <h3 class="font-serif text-2xl font-bold text-white mb-2">Request Private Property Advisory</h3>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Full Name *</label>
-                                    <input type="text" required placeholder="e.g. Eleanor Vance" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                    <input type="text" required placeholder="e.g. Vikram Malhotra" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
                                 </div>
                                 <div>
                                     <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Email Address *</label>
-                                    <input type="email" required placeholder="eleanor@example.com" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                    <input type="email" required placeholder="vikram@example.com" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
                                 </div>
                             </div>
 
                             <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number</label>
-                                    <input type="tel" placeholder="+1 (555) 000-0000" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Phone Number / WhatsApp *</label>
+                                    <input type="tel" required placeholder="+91 98100 00000" class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
                                 </div>
                                 <div>
-                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Interest Requirement</label>
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Requirement</label>
                                     <select class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500">
-                                        <option value="buy">Buying Luxury Property</option>
+                                        <option value="buy">Buying Luxury Home / Builder Floor</option>
                                         <option value="sell">Selling My Property</option>
-                                        <option value="invest">Commercial Investment</option>
-                                        <option value="advisory">General Consultation</option>
+                                        <option value="invest">Commercial Pre-Leased Asset</option>
+                                        <option value="nri">NRI Legal & Management Service</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div>
-                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Message or Specific Property Preferences</label>
-                                <textarea rows="4" placeholder="Tell us about your target location, budget, or preferred amenities..." class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 resize-none"></textarea>
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider mb-2">Specific Requirements (Preferred Location, BHK, Budget in ₹)</label>
+                                <textarea rows="4" placeholder="Mention target budget in Crores/Lakhs, BHK preference, or location..." class="w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-brand-500 resize-none"></textarea>
                             </div>
 
                             <button type="submit" class="w-full gold-gradient hover:opacity-95 text-slate-950 font-bold py-4 rounded-xl shadow-lg transition-all text-sm tracking-wider uppercase active:scale-95">
-                                Send Inquiry Request
+                                Send Advisory Request
                             </button>
                         </form>
                     </div>
@@ -666,6 +706,14 @@
         </section>
     </main>
 
+    <!-- FLOATING WHATSAPP WIDGET -->
+    <a href="https://wa.me/15553115051?text=Hello%20Kalra%20Associates,%20I%20am%20interested%20in%20a%20luxury%20property." target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110 border-2 border-white group" title="Chat on WhatsApp (+1 555-311-5051)">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <span class="absolute right-16 bg-slate-900 text-white text-xs font-semibold px-3 py-1.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none">
+            Chat on WhatsApp
+        </span>
+    </a>
+
     <!-- Footer -->
     <footer class="bg-slate-950 text-slate-400 border-t border-slate-800 text-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -673,19 +721,47 @@
                 <!-- Col 1 -->
                 <div class="lg:col-span-2 space-y-4">
                     <div class="flex items-center space-x-3">
-                        <div class="w-10 h-10 bg-brand-900 rounded-xl flex items-center justify-center text-brand-500 font-serif text-2xl font-bold border border-brand-500/30">
-                            K
+                        <div class="h-10 w-auto flex items-center shrink-0">
+                            <svg viewBox="0 0 520 500" class="h-10 w-auto" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Blue Top Swoosh -->
+                                <path d="M 5 210 C 150 195 280 140 460 10 C 270 170 150 225 5 210 Z" fill="#0072BC"/>
+                                <!-- Pink Bottom Swoosh -->
+                                <path d="M 5 290 C 150 305 280 360 460 490 C 270 330 150 275 5 290 Z" fill="#E24A73"/>
+                                <!-- Gold Arc -->
+                                <path d="M 175 25 C 240 160 240 340 175 475 C 200 340 200 160 175 25 Z" fill="#C5A468"/>
+                                <!-- Vertical Text ASSOCIATES -->
+                                <g fill="#FFFFFF" font-family="Arial, sans-serif" font-weight="900" font-size="34" text-anchor="middle">
+                                    <text x="495" y="45">A</text>
+                                    <text x="495" y="95">S</text>
+                                    <text x="495" y="145">S</text>
+                                    <text x="495" y="195">O</text>
+                                    <text x="495" y="245">C</text>
+                                    <text x="495" y="295">I</text>
+                                    <text x="495" y="345">A</text>
+                                    <text x="495" y="395">T</text>
+                                    <text x="495" y="445">E</text>
+                                    <text x="495" y="495">S</text>
+                                </g>
+                            </svg>
                         </div>
                         <span class="font-serif text-xl font-bold text-white tracking-tight">KALRA ASSOCIATES</span>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
-                        Kalra Associates is a boutique real estate brokerage and advisory firm specializing in ultra-luxury residential properties and commercial portfolios globally.
+                    <p class="text-xs text-slate-300 font-semibold">
+                        Operated by BINVANT INFRATECH PRIVATE LIMITED
                     </p>
+                    <p class="text-xs text-slate-400 leading-relaxed max-w-sm">
+                        Kalra Associates is a licensed real estate brokerage firm specializing in ultra-luxury builder floors, high-rise penthouses, farmhouses, and commercial pre-leased investments across India.
+                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        <i class="fa-solid fa-location-dot text-brand-500 mr-1"></i> Floor No.: Second Floor, Flat No.: 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi, South East Delhi, Delhi - 110076
+                    </p>
+                    <div class="space-y-1 text-xs">
+                        <p class="text-brand-500 font-semibold">GSTIN: 07AALCB2245C1Z1</p>
+                    </div>
                     <div class="flex space-x-3 pt-2">
+                        <a href="https://wa.me/15553115051" target="_blank" class="w-9 h-9 rounded-lg bg-emerald-600 flex items-center justify-center text-white hover:opacity-90 transition-opacity"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#" class="w-9 h-9 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-300 hover:text-brand-500 transition-colors"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
 
@@ -694,43 +770,39 @@
                     <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Quick Links</h4>
                     <ul class="space-y-2.5 text-xs">
                         <li><a href="#hero" class="hover:text-brand-500 transition-colors">Home</a></li>
-                        <li><a href="#properties" class="hover:text-brand-500 transition-colors">Featured Listings</a></li>
-                        <li><a href="#calculator" class="hover:text-brand-500 transition-colors">Mortgage Calculator</a></li>
-                        <li><a href="#about" class="hover:text-brand-500 transition-colors">About Kalra Associates</a></li>
-                        <li><a href="#contact" class="hover:text-brand-500 transition-colors">Book Private Visit</a></li>
+                        <li><a href="#properties" class="hover:text-brand-500 transition-colors">Prime Properties</a></li>
+                        <li><a href="#calculator" class="hover:text-brand-500 transition-colors">EMI Calculator</a></li>
+                        <li><a href="#about" class="hover:text-brand-500 transition-colors">About Brokerage</a></li>
+                        <li><a href="#contact" class="hover:text-brand-500 transition-colors">Contact Broker</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 3 -->
                 <div>
-                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Property Types</h4>
+                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Hot Locations</h4>
                     <ul class="space-y-2.5 text-xs">
-                        <li><a href="#properties" onclick="filterProperties('Villa')" class="hover:text-brand-500 transition-colors">Luxury Villas</a></li>
-                        <li><a href="#properties" onclick="filterProperties('Penthouse')" class="hover:text-brand-500 transition-colors">Modern Penthouses</a></li>
-                        <li><a href="#properties" onclick="filterProperties('Apartment')" class="hover:text-brand-500 transition-colors">Urban Condos</a></li>
-                        <li><a href="#properties" onclick="filterProperties('Estate')" class="hover:text-brand-500 transition-colors">Waterfront Estates</a></li>
+                        <li><a href="#properties" onclick="document.getElementById('keywordSearch').value='Gurugram'; renderProperties();" class="hover:text-brand-500 transition-colors">Golf Course Rd, Gurugram</a></li>
+                        <li><a href="#properties" onclick="document.getElementById('keywordSearch').value='South Delhi'; renderProperties();" class="hover:text-brand-500 transition-colors">South Delhi Builder Floors</a></li>
+                        <li><a href="#properties" onclick="document.getElementById('keywordSearch').value='Mumbai'; renderProperties();" class="hover:text-brand-500 transition-colors">Worli & Bandra, Mumbai</a></li>
+                        <li><a href="#properties" onclick="document.getElementById('keywordSearch').value='Goa'; renderProperties();" class="hover:text-brand-500 transition-colors">North Goa Villas</a></li>
                     </ul>
                 </div>
 
                 <!-- Col 4 -->
                 <div>
-                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">Newsletter</h4>
-                    <p class="text-xs text-slate-400 mb-3">Subscribe for exclusive off-market listing previews.</p>
-                    <form onsubmit="event.preventDefault(); showToast('Subscribed to Kalra Associates newsletter!');" class="space-y-2">
-                        <input type="email" required placeholder="Enter email address" class="w-full bg-slate-900 border border-slate-800 rounded-lg px-3 py-2 text-xs text-white focus:outline-none focus:border-brand-500">
-                        <button type="submit" class="w-full bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold py-2 rounded-lg text-xs transition-colors">
-                            Subscribe
-                        </button>
-                    </form>
+                    <h4 class="text-white font-semibold mb-4 text-xs tracking-wider uppercase">WhatsApp Inquiry</h4>
+                    <p class="text-xs text-slate-400 mb-3">Connect directly on WhatsApp for off-market listings.</p>
+                    <a href="https://wa.me/15553115051?text=Hi%20Kalra%20Associates,%20please%20send%20off-market%20luxury%20listings." target="_blank" class="block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 rounded-lg text-xs transition-colors">
+                        <i class="fa-brands fa-whatsapp text-sm mr-1"></i> +1 (555) 311-5051
+                    </a>
                 </div>
             </div>
 
             <div class="border-t border-slate-900 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
-                <p>&copy; 2026 Kalra Associates Real Estate. All rights reserved.</p>
+                <p>&copy; 2026 BINVANT INFRATECH PRIVATE LIMITED (Kalra Associates Real Estate Brokerage). All rights reserved.</p>
                 <div class="flex space-x-6 mt-4 sm:mt-0">
-                    <a href="#" class="hover:text-slate-400">Privacy Policy</a>
-                    <a href="#" class="hover:text-slate-400">Terms of Service</a>
-                    <a href="#" class="hover:text-slate-400">Equal Housing Opportunity</a>
+                    <button onclick="openPrivacyModal()" class="hover:text-slate-400 transition-colors">Privacy Policy</button>
+                    <button onclick="openTermsModal()" class="hover:text-slate-400 transition-colors">Terms of Service</button>
                 </div>
             </div>
         </div>
@@ -789,6 +861,104 @@
         </div>
     </div>
 
+    <!-- PRIVACY POLICY MODAL -->
+    <div id="privacyModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[85vh] overflow-y-auto custom-scrollbar shadow-2xl border border-slate-200 p-6 sm:p-10 relative">
+            <button onclick="closePrivacyModal()" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-slate-200 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="space-y-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Legal Compliance</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Privacy Policy</h2>
+                    <p class="text-xs text-slate-400 mt-1">Effective Date: January 1, 2026 | Operator: BINVANT INFRATECH PRIVATE LIMITED</p>
+                </div>
+
+                <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                    <p>At <strong>Kalra Associates</strong> (operated by <strong>BINVANT INFRATECH PRIVATE LIMITED</strong>), accessible from kalraassociates.in, one of our main priorities is the privacy of our clients and site visitors. This Privacy Policy outlines the types of information collected and how it is utilized in accordance with India's Digital Personal Data Protection Act (DPDP Act) and applicable Real Estate Laws.</p>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">1. Information We Collect</h3>
+                    <p>When you fill out consultation forms, request site visits, or contact us via WhatsApp/Email, we may collect personal details including:</p>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                        <li>Full Name and Contact Number (WhatsApp/Phone)</li>
+                        <li>Email Address</li>
+                        <li>Property Preferences (Budget, Target Location, Unit Size)</li>
+                        <li>Financial criteria relevant for home loan evaluation (where requested)</li>
+                    </ul>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">2. How We Use Your Information</h3>
+                    <p>Your information is exclusively used for professional real estate advisory, including:</p>
+                    <ul class="list-disc pl-5 space-y-1 text-slate-600">
+                        <li>Arranging private site visits for shortlisted luxury properties.</li>
+                        <li>Communicating real estate advisory reports, market updates, and new developer launches via WhatsApp or email.</li>
+                        <li>Assisting in legal title verification and home loan processing upon your explicit request.</li>
+                    </ul>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">3. Data Protection & Non-Disclosure</h3>
+                    <p>We respect your confidentiality. BINVANT INFRATECH PRIVATE LIMITED strictly adheres to zero-spam policies. We do not sell, trade, or transfer your personally identifiable information to third-party telemarketers or external entities.</p>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">4. Contact & Grievances</h3>
+                    <p>For any privacy concerns or request for data deletion, please contact our Compliance Desk:</p>
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+                        <p><strong>Grievance Officer:</strong> BINVANT INFRATECH PRIVATE LIMITED</p>
+                        <p><strong>Address:</strong> Second Floor, Flat No. 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi - 110076</p>
+                        <p><strong>Email:</strong> contact@kalraassociates.in | <strong>GSTIN:</strong> 07AALCB2245C1Z1</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-200 text-right">
+                    <button onclick="closePrivacyModal()" class="px-6 py-2.5 bg-brand-900 text-white text-xs font-bold rounded-xl hover:bg-brand-950 transition-colors">
+                        I Understand & Accept
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TERMS OF SERVICE MODAL -->
+    <div id="termsModal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4 sm:p-6 bg-slate-950/80 backdrop-blur-md overflow-y-auto">
+        <div class="bg-white rounded-3xl max-w-3xl w-full max-h-[85vh] overflow-y-auto custom-scrollbar shadow-2xl border border-slate-200 p-6 sm:p-10 relative">
+            <button onclick="closeTermsModal()" class="absolute top-6 right-6 w-9 h-9 rounded-full bg-slate-100 text-slate-700 flex items-center justify-center hover:bg-slate-200 transition-colors">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="space-y-6">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-600">Legal Agreement</span>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mt-1">Terms of Service & Advisory Disclaimer</h2>
+                    <p class="text-xs text-slate-400 mt-1">Last Updated: January 1, 2026 | Entity: BINVANT INFRATECH PRIVATE LIMITED</p>
+                </div>
+
+                <div class="space-y-4 text-sm text-slate-600 leading-relaxed">
+                    <p>Welcome to <strong>Kalra Associates</strong>. By using this website and our real estate consultation services, you agree to comply with and be bound by the following Terms of Service.</p>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">1. Real Estate Brokerage & Advisory Scope</h3>
+                    <p>Kalra Associates (operated by BINVANT INFRATECH PRIVATE LIMITED) provides real estate brokerage, property listing display, and property management advisory across Delhi NCR and India. All property details, pricing in Rupees (INR), floor plans, and amenities listed are provided for guidance purposes only.</p>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">2. Property Verification & Due Diligence Disclaimer</h3>
+                    <p>While Kalra Associates conducts preliminary legal title searches and developer verification, prospective buyers and tenants are advised to independently verify all property documents, RERA registration numbers, municipal approvals, and sale deeds prior to executing any financial transaction or agreement to sell.</p>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">3. Pricing & Availability</h3>
+                    <p>Property prices, availability status, and developer offers are subject to change without prior notice depending on market conditions and developer revisions.</p>
+
+                    <h3 class="font-bold text-slate-900 text-base font-serif pt-2">4. Limitation of Liability & Jurisdiction</h3>
+                    <p>BINVANT INFRATECH PRIVATE LIMITED shall not be liable for any direct, indirect, or consequential damages resulting from property transactions conducted independently without executing a formal brokerage agreement. All legal matters are subject to the exclusive jurisdiction of the Courts in New Delhi, India.</p>
+
+                    <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 text-xs text-slate-700">
+                        <p><strong>Corporate Identifier:</strong> BINVANT INFRATECH PRIVATE LIMITED</p>
+                        <p><strong>Registered Address:</strong> Second Floor, Flat No. 222, Udyog Sheel Mahila, Mathura Road, Sehkari Samiti Complex, New Delhi - 110076</p>
+                        <p><strong>GST Certificate:</strong> 07AALCB2245C1Z1</p>
+                    </div>
+                </div>
+
+                <div class="pt-4 border-t border-slate-200 text-right">
+                    <button onclick="closeTermsModal()" class="px-6 py-2.5 bg-brand-900 text-white text-xs font-bold rounded-xl hover:bg-brand-950 transition-colors">
+                        Acknowledge Terms
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- TOAST NOTIFICATION -->
     <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 text-white px-5 py-3.5 rounded-xl shadow-2xl flex items-center space-x-3 border border-brand-500/40">
         <i class="fa-solid fa-circle-check text-brand-500 text-lg" id="toastIcon"></i>
@@ -796,136 +966,151 @@
     </div>
 
     <script>
-        // Data Store for Kalra Associates Properties
+        // Data Store for Kalra Associates - Indian Properties in Rupees (INR)
         const propertiesData = [
             {
                 id: 1,
-                title: "The Glass House Sky Villa",
+                title: "The DLF Camellias Sky Penthouse",
                 type: "Penthouse",
                 status: "Buy",
-                price: 8500000,
-                location: "Manhattan, NY",
-                address: "432 Park Avenue, Penthouse 72, New York",
-                beds: 4,
+                price: 185000000, // ₹ 18.5 Crores
+                location: "Gurugram",
+                address: "Golf Course Road, Sector 42, Gurugram",
+                beds: "4 BHK",
                 baths: 5,
-                sqft: 4800,
-                garage: 2,
-                year: 2023,
+                sqft: 7200,
+                garage: 3,
+                year: 2024,
                 image: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
                 gallery: [
                     "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1000&q=80",
                     "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1000&q=80",
                     "https://images.unsplash.com/photo-1600566753376-12c8ab7fb75b?auto=format&fit=crop&w=1000&q=80"
                 ],
-                amenities: ["Private Elevator", "360 Skyline View", "Heated Infinity Pool", "24/7 Doorman", "Wine Cellar"],
-                description: "An architectural marvel towering high above Central Park. Features floor-to-ceiling ultra-clear glass walls, custom Italian marble kitchen, private spa room, and smart home automation."
+                amenities: ["Private Elevator", "Golf Course View", "Heated Swimming Pool", "24/7 Concierge", "Italian Marble Flooring"],
+                description: "Ultra-exclusive Sky Penthouse overlooking the lush Golf Course greens in Gurugram. Features double-height living room ceilings, private plunge pool, VRV air conditioning, and top-tier security."
             },
             {
                 id: 2,
-                title: "Beverly Crest Architectural Estate",
-                type: "Villa",
+                title: "Vasant Vihar Independent Builder Floor",
+                type: "Builder Floor",
                 status: "Buy",
-                price: 14200000,
-                location: "Beverly Hills, CA",
-                address: "1040 Summit Drive, Beverly Hills",
-                beds: 6,
-                baths: 8,
-                sqft: 8500,
-                garage: 4,
-                year: 2024,
+                price: 125000000, // ₹ 12.5 Crores
+                location: "South Delhi",
+                address: "Block C, Vasant Vihar, New Delhi",
+                beds: "4 BHK",
+                baths: 4,
+                sqft: 4500,
+                garage: 2,
+                year: 2023,
                 image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
                 gallery: [
                     "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80",
-                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80",
-                    "https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=1000&q=80"
+                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80"
                 ],
-                amenities: ["Private Tennis Court", "Zero-Edge Pool", "Home Cinema", "Security Guardhouse", "Solar Powered"],
-                description: "Nestled in prestigious Beverly Hills, this newly constructed compound offers complete privacy, cascading water features, expansive manicured grounds, and seamless indoor-outdoor luxury integration."
+                amenities: ["Stilt Parking", "Servant Quarter", "Private Terrace", "German Modular Kitchen", "Clear Title"],
+                description: "Brand new modern 4 BHK independent luxury builder floor in prime South Delhi. Includes stilt parking, private lift access, servant room, and lavish Italian marble finishes."
             },
             {
                 id: 3,
-                title: "Biscayne Bay Oceanfront Sanctuary",
-                type: "Estate",
+                title: "Worli Sea Face Luxury Residence",
+                type: "Apartment",
                 status: "Buy",
-                price: 11800000,
-                location: "Miami Beach, FL",
-                address: "220 Star Island Drive, Miami Beach",
-                beds: 5,
+                price: 280000000, // ₹ 28.0 Crores
+                location: "Mumbai",
+                address: "Worli Sea Face, South Mumbai",
+                beds: "5 BHK",
                 baths: 6,
-                sqft: 7200,
-                garage: 3,
-                year: 2022,
+                sqft: 6500,
+                garage: 4,
+                year: 2024,
                 image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80",
                 gallery: [
                     "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1000&q=80",
                     "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1000&q=80"
                 ],
-                amenities: ["Private Yacht Dock", "Outdoor Kitchen", "Sauna & Steam Room", "Gated Security", "Roof Terrace"],
-                description: "Direct deep-water oceanfront estate capable of docking up to a 100ft yacht. Includes lush tropical landscaping, summer kitchen, and panoramic sunset views across Biscayne Bay."
+                amenities: ["Unobstructed Sea View", "Private Deck", "Gym & Spa", "Automated Home System", "Multi-tier Security"],
+                description: "Iconic oceanfront residence offering panoramic views of the Arabian Sea and Bandra-Worli Sea Link. Custom fitted with world-class amenities and private elevator entry."
             },
             {
                 id: 4,
-                title: "Aspen Mountain Modern Chalet",
+                title: "Assagao Heritage Portuguese Villa",
                 type: "Villa",
                 status: "Buy",
-                price: 9800000,
-                location: "Aspen, CO",
-                address: "710 Red Mountain Road, Aspen",
-                beds: 5,
+                price: 98000000, // ₹ 9.8 Crores
+                location: "Goa",
+                address: "Badem Road, Assagao, North Goa",
+                beds: "4 BHK",
                 baths: 5,
-                sqft: 6100,
+                sqft: 4800,
                 garage: 2,
-                year: 2021,
+                year: 2022,
                 image: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80",
                 gallery: [
                     "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=80",
                     "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1000&q=80"
                 ],
-                amenities: ["Ski-in / Ski-out", "Radiant Heated Driveway", "Outdoor Fire Pits", "Custom Timberwork"],
-                description: "Ski-in/ski-out luxury living on Red Mountain. Features soaring cathedral ceilings, floor-to-ceiling stone fireplaces, and stunning alpine vistas."
+                amenities: ["Private Swimming Pool", "Tropical Garden", "100% Power Backup", "Fully Furnished"],
+                description: "Exquisite Portuguese-style luxury villa located in fashionably tranquil Assagao. Features private pool, lush tropical gardens, and high wooden beam ceilings."
             },
             {
                 id: 5,
-                title: "Tribeca Brick Loft Residence",
+                title: "UB City Residences Condominium",
                 type: "Apartment",
-                status: "Rent",
-                price: 18500, // per month
-                location: "Manhattan, NY",
-                address: "180 Franklin Street, Tribeca, NY",
-                beds: 3,
+                status: "Buy",
+                price: 75000000, // ₹ 7.5 Crores
+                location: "Bengaluru",
+                address: "Vittal Mallya Road, Indiranagar / UB City, Bengaluru",
+                beds: "3 BHK",
                 baths: 3,
-                sqft: 3100,
-                garage: 1,
-                year: 2020,
+                sqft: 3200,
+                garage: 2,
+                year: 2023,
                 image: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80",
                 gallery: [
-                    "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80",
-                    "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=80"
+                    "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1000&q=80"
                 ],
-                amenities: ["Exposed Brickwork", "Private Keyed Elevator", "Chef Grade Appliances", "Concierge"],
-                description: "Authentic Tribeca industrial loft featuring original exposed brick columns, wide-plank oak flooring, professional Sub-Zero/Gaggenau kitchen appliances."
+                amenities: ["Clubhouse", "Temperature Controlled Pool", "EV Charging", "24/7 Power Backup"],
+                description: "Prime CBD condominium adjacent to UB City. Walking distance to high-end dining, luxury retail, and office parks with rich greenery views."
             },
             {
                 id: 6,
-                title: "Malibu Ocean Terrace Residence",
+                title: "DLF Magnolias Duplex Estate",
                 type: "Penthouse",
                 status: "Rent",
-                price: 32000, // per month
-                location: "Beverly Hills, CA",
-                address: "23800 Pacific Coast Hwy, Malibu",
-                beds: 4,
-                baths: 4,
-                sqft: 4200,
-                garage: 2,
-                year: 2022,
+                price: 350000, // ₹ 3.5 Lakh / month
+                location: "Gurugram",
+                address: "DLF Phase 5, Golf Course Road, Gurugram",
+                beds: "4 BHK",
+                baths: 5,
+                sqft: 5800,
+                garage: 3,
+                year: 2023,
                 image: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80",
                 gallery: [
                     "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=80"
                 ],
-                amenities: ["Private Beach Access", "Cantilevered Deck", "Floor-to-Ceiling Glass", "Tesla Charger"],
-                description: "Overlooking the pristine sands of Malibu beach with breathtaking ocean waves right below your cantilevered balcony."
+                amenities: ["Fully Furnished", "Golf Club Access", "Private Chef Kitchen", "Olympic Size Pool"],
+                description: "Ultra-luxury fully furnished rental penthouse in DLF Magnolias. Includes high-end import furniture, automated curtains, and access to five-star club facilities."
             }
         ];
+
+        // Format Currency Helper for Indian System
+        function formatIndianPrice(amount, status) {
+            if (status === 'Rent') {
+                if (amount >= 100000) {
+                    return `₹ ${(amount / 100000).toFixed(1)} Lakh/mo`;
+                }
+                return `₹ ${amount.toLocaleString('en-IN')}/mo`;
+            } else {
+                if (amount >= 10000000) {
+                    return `₹ ${(amount / 10000000).toFixed(2)} Cr`;
+                } else if (amount >= 100000) {
+                    return `₹ ${(amount / 100000).toFixed(2)} Lakh`;
+                }
+                return `₹ ${amount.toLocaleString('en-IN')}`;
+            }
+        }
 
         // App State
         let favorites = JSON.parse(localStorage.getItem('kalra_favs') || '[]');
@@ -953,7 +1138,7 @@
                     <div class="col-span-full text-center py-12 bg-white rounded-2xl border border-dashed border-slate-300">
                         <i class="fa-solid fa-house-chimney text-4xl text-slate-300 mb-3 block"></i>
                         <h3 class="text-lg font-bold text-slate-800">No matching properties found</h3>
-                        <p class="text-xs text-slate-500 mt-1">Try resetting your search parameters or location query.</p>
+                        <p class="text-xs text-slate-500 mt-1">Try resetting your search parameters or query.</p>
                     </div>
                 `;
                 return;
@@ -962,9 +1147,8 @@
             grid.innerHTML = filtered.map(prop => {
                 const isFav = favorites.includes(prop.id);
                 const isComp = compareList.includes(prop.id);
-                const priceFormatted = prop.status === 'Rent' 
-                    ? `$${prop.price.toLocaleString()}/mo` 
-                    : `$${prop.price.toLocaleString()}`;
+                const priceFormatted = formatIndianPrice(prop.price, prop.status);
+                const waMessage = encodeURIComponent(`Hi Kalra Associates, I am interested in property ID #${prop.id}: ${prop.title} (${priceFormatted}).`);
 
                 return `
                     <div class="bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
@@ -1006,7 +1190,7 @@
                             <div class="grid grid-cols-3 gap-2 py-3 border-y border-slate-100 text-slate-600 text-xs">
                                 <div class="flex items-center space-x-1.5">
                                     <i class="fa-solid fa-bed text-brand-500"></i>
-                                    <span><strong>${prop.beds}</strong> Beds</span>
+                                    <span><strong>${prop.beds}</strong></span>
                                 </div>
                                 <div class="flex items-center space-x-1.5">
                                     <i class="fa-solid fa-bath text-brand-500"></i>
@@ -1014,7 +1198,7 @@
                                 </div>
                                 <div class="flex items-center space-x-1.5">
                                     <i class="fa-solid fa-ruler-combined text-brand-500"></i>
-                                    <span><strong>${prop.sqft.toLocaleString()}</strong> sqft</span>
+                                    <span><strong>${prop.sqft.toLocaleString('en-IN')}</strong> sqft</span>
                                 </div>
                             </div>
                         </div>
@@ -1027,11 +1211,14 @@
                             </div>
                             
                             <div class="flex space-x-2">
+                                <a href="https://wa.me/15553115051?text=${waMessage}" target="_blank" class="px-3 py-2 rounded-xl text-xs font-semibold bg-emerald-600 text-white hover:bg-emerald-700 transition-all flex items-center" title="WhatsApp Broker">
+                                    <i class="fa-brands fa-whatsapp text-sm"></i>
+                                </a>
                                 <button onclick="toggleCompare(${prop.id})" class="px-3 py-2 rounded-xl text-xs font-semibold ${isComp ? 'bg-slate-900 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'} transition-all" title="Compare">
                                     <i class="fa-solid fa-code-compare"></i>
                                 </button>
-                                <button onclick="openDetailsModal(${prop.id})" class="px-4 py-2 bg-brand-900 hover:bg-brand-950 text-white text-xs font-bold rounded-xl transition-all shadow-sm">
-                                    View Details
+                                <button onclick="openDetailsModal(${prop.id})" class="px-3 py-2 bg-brand-900 hover:bg-brand-950 text-white text-xs font-bold rounded-xl transition-all shadow-sm">
+                                    Details
                                 </button>
                             </div>
                         </div>
@@ -1046,7 +1233,8 @@
             if (!prop) return;
 
             const modalContent = document.getElementById('modalContent');
-            const priceFormatted = prop.status === 'Rent' ? `$${prop.price.toLocaleString()}/mo` : `$${prop.price.toLocaleString()}`;
+            const priceFormatted = formatIndianPrice(prop.price, prop.status);
+            const waMessage = encodeURIComponent(`Hi Kalra Associates, I am interested in arranging a private site visit for property ID #${prop.id}: ${prop.title} (${priceFormatted}).`);
 
             modalContent.innerHTML = `
                 <!-- Gallery Section -->
@@ -1077,32 +1265,32 @@
                 <!-- Specs Grid -->
                 <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 bg-slate-50 p-4 rounded-2xl border border-slate-100">
                     <div>
-                        <span class="text-xs text-slate-400 block">Bedrooms</span>
-                        <strong class="text-slate-800 text-base">${prop.beds} Beds</strong>
+                        <span class="text-xs text-slate-400 block">Configuration</span>
+                        <strong class="text-slate-800 text-base">${prop.beds}</strong>
                     </div>
                     <div>
                         <span class="text-xs text-slate-400 block">Bathrooms</span>
                         <strong class="text-slate-800 text-base">${prop.baths} Baths</strong>
                     </div>
                     <div>
-                        <span class="text-xs text-slate-400 block">Total Area</span>
-                        <strong class="text-slate-800 text-base">${prop.sqft.toLocaleString()} sqft</strong>
+                        <span class="text-xs text-slate-400 block">Super Area</span>
+                        <strong class="text-slate-800 text-base">${prop.sqft.toLocaleString('en-IN')} sqft</strong>
                     </div>
                     <div>
-                        <span class="text-xs text-slate-400 block">Garage Spaces</span>
-                        <strong class="text-slate-800 text-base">${prop.garage} Cars</strong>
+                        <span class="text-xs text-slate-400 block">Car Parking</span>
+                        <strong class="text-slate-800 text-base">${prop.garage} Reserved</strong>
                     </div>
                 </div>
 
                 <!-- Description -->
                 <div>
-                    <h4 class="font-serif text-lg font-bold text-slate-900 mb-2">Property Description</h4>
+                    <h4 class="font-serif text-lg font-bold text-slate-900 mb-2">Property Highlights & Description</h4>
                     <p class="text-sm text-slate-600 leading-relaxed">${prop.description}</p>
                 </div>
 
                 <!-- Amenities -->
                 <div>
-                    <h4 class="font-serif text-lg font-bold text-slate-900 mb-3">Key Features & Amenities</h4>
+                    <h4 class="font-serif text-lg font-bold text-slate-900 mb-3">Specifications & Luxuries</h4>
                     <div class="flex flex-wrap gap-2">
                         ${prop.amenities.map(a => `
                             <span class="px-3 py-1.5 bg-slate-100 text-slate-700 rounded-xl text-xs font-semibold flex items-center">
@@ -1120,12 +1308,14 @@
                         </div>
                         <div>
                             <h4 class="font-bold text-white text-sm">Vikram Kalra</h4>
-                            <span class="text-xs text-slate-400">Principal Luxury Advisor</span>
+                            <span class="text-xs text-slate-400">Principal Luxury Real Estate Broker</span>
                         </div>
                     </div>
-                    <a href="#contact" onclick="closeDetailsModal()" class="w-full sm:w-auto px-6 py-3 bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-xs rounded-xl transition-all text-center">
-                        Schedule Tour for This Property
-                    </a>
+                    <div class="flex gap-2 w-full sm:w-auto">
+                        <a href="https://wa.me/15553115051?text=${waMessage}" target="_blank" class="flex-1 sm:flex-initial px-5 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs rounded-xl transition-all text-center flex items-center justify-center">
+                            <i class="fa-brands fa-whatsapp text-base mr-2"></i> WhatsApp (+1 555-311-5051)
+                        </a>
+                    </div>
                 </div>
             `;
 
@@ -1138,7 +1328,7 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Mortgage Calculator Logic
+        // Indian EMI Calculator Logic
         function updateCalculator() {
             const price = parseFloat(document.getElementById('calcPrice').value);
             const downPct = parseFloat(document.getElementById('calcDown').value);
@@ -1148,8 +1338,11 @@
             const downVal = price * (downPct / 100);
             const loanAmount = price - downVal;
 
-            document.getElementById('calcPriceVal').innerText = `$${price.toLocaleString()}`;
-            document.getElementById('calcDownVal').innerText = `${downPct}% ($${downVal.toLocaleString()})`;
+            const priceFormatted = price >= 10000000 ? `₹ ${(price / 10000000).toFixed(2)} Crores` : `₹ ${(price / 100000).toFixed(2)} Lakhs`;
+            const downValFormatted = downVal >= 10000000 ? `₹ ${(downVal / 10000000).toFixed(2)} Cr` : `₹ ${(downVal / 100000).toFixed(2)} Lakh`;
+
+            document.getElementById('calcPriceVal').innerText = priceFormatted;
+            document.getElementById('calcDownVal').innerText = `${downPct}% (${downValFormatted})`;
 
             const monthlyRate = (interest / 100) / 12;
             const totalPayments = termYears * 12;
@@ -1163,12 +1356,12 @@
 
             const totalRepayment = monthlyPayment * totalPayments;
             const totalInterest = totalRepayment - loanAmount;
-            const estTaxes = (price * 0.008) / 12; // ~0.8% annual tax estimate
+            const estStampDuty = price * 0.06; // Approx 6% stamp duty in India
 
-            document.getElementById('calcMonthlyResult').innerText = `$${Math.round(monthlyPayment).toLocaleString()}`;
-            document.getElementById('calcTotalLoan').innerText = `$${Math.round(loanAmount).toLocaleString()}`;
-            document.getElementById('calcTotalInterest').innerText = `$${Math.round(totalInterest).toLocaleString()}`;
-            document.getElementById('calcTaxes').innerText = `$${Math.round(estTaxes).toLocaleString()}/mo`;
+            document.getElementById('calcMonthlyResult').innerText = `₹ ${Math.round(monthlyPayment).toLocaleString('en-IN')}`;
+            document.getElementById('calcTotalLoan').innerText = `₹ ${Math.round(loanAmount).toLocaleString('en-IN')}`;
+            document.getElementById('calcTotalInterest').innerText = `₹ ${Math.round(totalInterest).toLocaleString('en-IN')}`;
+            document.getElementById('calcTaxes').innerText = `₹ ${Math.round(estStampDuty).toLocaleString('en-IN')} (approx)`;
         }
 
         // Favorites Management
@@ -1204,7 +1397,7 @@
                     <img src="${p.image}" class="w-16 h-16 rounded-lg object-cover">
                     <div class="flex-grow min-w-0">
                         <h4 class="font-bold text-slate-800 text-xs truncate">${p.title}</h4>
-                        <span class="text-xs text-brand-600 font-bold">$${p.price.toLocaleString()}</span>
+                        <span class="text-xs text-brand-600 font-bold">${formatIndianPrice(p.price, p.status)}</span>
                     </div>
                     <button onclick="toggleFavorite(${p.id})" class="text-slate-400 hover:text-rose-500 p-2">
                         <i class="fa-solid fa-trash text-sm"></i>
@@ -1261,7 +1454,7 @@
                     <tbody class="divide-y divide-slate-100 text-slate-700">
                         <tr>
                             <td class="p-3 font-semibold text-slate-500">Price</td>
-                            ${comparedItems.map(item => `<td class="p-3 font-bold text-brand-600">$${item.price.toLocaleString()}</td>`).join('')}
+                            ${comparedItems.map(item => `<td class="p-3 font-bold text-brand-600">${formatIndianPrice(item.price, item.status)}</td>`).join('')}
                         </tr>
                         <tr>
                             <td class="p-3 font-semibold text-slate-500">Location</td>
@@ -1272,16 +1465,16 @@
                             ${comparedItems.map(item => `<td class="p-3">${item.type}</td>`).join('')}
                         </tr>
                         <tr>
-                            <td class="p-3 font-semibold text-slate-500">Bedrooms / Baths</td>
-                            ${comparedItems.map(item => `<td class="p-3">${item.beds} Bed / ${item.baths} Bath</td>`).join('')}
+                            <td class="p-3 font-semibold text-slate-500">Configuration</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.beds} / ${item.baths} Bath</td>`).join('')}
                         </tr>
                         <tr>
-                            <td class="p-3 font-semibold text-slate-500">Total Area</td>
-                            ${comparedItems.map(item => `<td class="p-3">${item.sqft.toLocaleString()} sqft</td>`).join('')}
+                            <td class="p-3 font-semibold text-slate-500">Super Area</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.sqft.toLocaleString('en-IN')} sqft</td>`).join('')}
                         </tr>
                         <tr>
-                            <td class="p-3 font-semibold text-slate-500">Garage</td>
-                            ${comparedItems.map(item => `<td class="p-3">${item.garage} Vehicles</td>`).join('')}
+                            <td class="p-3 font-semibold text-slate-500">Parking</td>
+                            ${comparedItems.map(item => `<td class="p-3">${item.garage} Reserved</td>`).join('')}
                         </tr>
                     </tbody>
                 </table>
@@ -1292,6 +1485,26 @@
 
         function closeCompareModal() {
             document.getElementById('compareModal').classList.add('hidden');
+        }
+
+        function openPrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        function openTermsModal() {
+            document.getElementById('termsModal').classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeTermsModal() {
+            document.getElementById('termsModal').classList.add('hidden');
+            document.body.style.overflow = 'auto';
         }
 
         // Search & Filtering Utilities
@@ -1328,7 +1541,6 @@
         function executeHeroSearch() {
             const loc = document.getElementById('searchLocation').value.toLowerCase();
             const type = document.getElementById('searchType').value;
-            const maxPrice = parseFloat(document.getElementById('searchMaxPrice').value) || Infinity;
 
             if (type) {
                 currentFilterCategory = type;
@@ -1344,7 +1556,7 @@
         // Contact Form Handler
         function handleContactSubmit(e) {
             e.preventDefault();
-            showToast('Thank you! A Kalra Associates senior representative will contact you within 2 hours.');
+            showToast('Thank you! Senior broker Vikram Kalra will reach out to you within 2 hours.');
             e.target.reset();
         }
 
